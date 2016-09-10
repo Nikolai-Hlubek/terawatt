@@ -67,11 +67,13 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
-	apt-get install -y ubuntu-desktop
-	apt-get install -y build-essential python3 python3-dev python3-pip
-	pip3 install --upgrade pip
-	pip3 install jupyter
-	pip3 install RISE
-	pip3 install plotly
+    apt-get install -y ubuntu-desktop
+    apt-get install -y build-essential python3 python3-dev python3-pip
+    pip3 install --upgrade pip
+    pip3 install jupyter
+    pip3 install RISE
+    jupyter-nbextension install rise --py --sys-prefix
+    jupyter-nbextension enable rise --py --sys-prefix
+    pip3 install plotly
   SHELL
 end
