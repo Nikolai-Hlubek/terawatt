@@ -22,3 +22,10 @@ The environment variable that was automatically created for me had a keyname of 
 #### Set virtual machine folder
 
 Adapt VirtualBox virtual machine path to your liking by starting VirtualBox and going to settings.
+
+
+### Push to github repository
+
+git add <file>
+git commit -a -m "Blah Blah Blah"
+git push origin master
