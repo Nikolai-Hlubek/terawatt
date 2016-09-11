@@ -69,11 +69,34 @@ Vagrant.configure("2") do |config|
     apt-get install -y virtualbox-guest-dkms virtualbox-guest-utils virtualbox-guest-x11
     apt-get install -y ubuntu-desktop
     apt-get install -y build-essential python3 python3-dev python3-pip
+	apt-get install -y vim
+	
+	# Jupyter with RISE, plotly and iplantuml
     pip3 install --upgrade pip
     pip3 install jupyter
     pip3 install RISE
     jupyter-nbextension install rise --py --sys-prefix
     jupyter-nbextension enable rise --py --sys-prefix
     pip3 install plotly
+	pip3 install iplantuml
+	apt-get install -y plantuml
+	cp /usr/share/plantuml/plantuml.jar /usr/local/
+	
+	# German support
+	locale-gen de_DE.UTF-8
+	update-locale LANG=de_DE.UTF-8 LC_MESSAGES=POSIX
+	sed -i 's/us/de/g' /etc/default/keyboard
+	
+	# Git
+	apt-get install -y git
+
+	mkdir -p what-the-data
+	git clone https://github.com/nikolai-hlubek/terawatt /home/vagrant/what-the-data
   SHELL
+ 
+  config.vm.provision "shell", 
+    inline: "nohup jupyter-notebook --ip 0.0.0.0 --port 8888 --notebook-dir=/home/vagrant/what-the-data --no-browser &",
+    privileged: false,
+    run: "always"
+
 end
