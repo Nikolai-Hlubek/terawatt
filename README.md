@@ -26,6 +26,8 @@ Adapt VirtualBox virtual machine path to your liking by starting VirtualBox and 
 
 ### Push to github repository
 
-git add <file>
-git commit -a -m "Blah Blah Blah"
-git push origin master
+'git add <file>'
+
+'git commit -a -m "Blah Blah Blah"'
+
+'git push origin master'
