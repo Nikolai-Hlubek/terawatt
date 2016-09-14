@@ -79,6 +79,7 @@ Vagrant.configure("2") do |config|
     jupyter-nbextension enable rise --py --sys-prefix
     pip3 install plotly
 	pip3 install iplantuml
+	pip3 install numpy
 	apt-get install -y plantuml
 	cp /usr/share/plantuml/plantuml.jar /usr/local/
 	
