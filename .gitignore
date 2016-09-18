@@ -1,1 +1,4 @@
 .vagrant/
+.ipynb_checkpoints/
+.model.py.swp
+__pycache__/
