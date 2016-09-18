@@ -5,7 +5,7 @@ skinparam dpi 100
 
 state Energiecampus{
 
-    state Wärmeübergabestation{
+    state Wärmeübergabestation {
         Wärmeübergabestation : Fernwärmenetz zu Zentralheizung des Gebäudes. 
         Elektroheizstäbe : Leistung (elektrisch) : 24 kW
         Elektroheizstäbe : Leistung (thermisch) : 11 kW
@@ -19,16 +19,24 @@ state Energiecampus{
         Warmwasserbereitung : ?? kW
     }                  
     
-    Gasmischer : Wasserstoff aus Elektrolyse
-    Gasmischer : Methanhaltiges Gas aus Methanisierung
-    Gasmischer : Erdgas dem öffentlichen Netz
+    state BlockheizkraftwerkGesamt {
+        Gasmischer : Wasserstoff aus Elektrolyse
+        Gasmischer : Methanhaltiges Gas aus Methanisierung
+        Gasmischer : Erdgas dem öffentlichen Netz
+        Blockheizkraftwerk : Erdgas, Methanhaltiges Gas, Wasserstoff (maximal 20%)        
+    }
     
 
     
     Photovoltaik : Leistung (elektrisch) : ca. 10 kW peak
 }
 
-state Versorger{
+state Natur {
+    Sonne -[#yellow]-> Photovoltaik
+    Sonne : Leistung (solar) : ca. 1kW/m² peak
+}
+
+state Versorger {
     Strom -[#blue]-> Elektroauto 
     Strom : elektrische Leistung
     Erdgas -[#red]-> Gasmischer
@@ -41,7 +49,6 @@ state Energiecampus{
     
     Blockheizkraftwerk -[#green]-> thermischerSpeicher
     Blockheizkraftwerk -[#blue]-> Elektroauto
-    Blockheizkraftwerk : Erdgas, Methanhaltiges Gas, Wasserstoff (maximal 20%)
     Blockheizkraftwerk : Leistung (elektrisch) : 5-16 kW
 
     Gasmischer -[#red]-> Blockheizkraftwerk
@@ -74,7 +81,7 @@ state Energiecampus{
     thermischerSpeicher -[#green]-> Warmwasserbereitung
     thermischerSpeicher -[#green]-> Raumheizung
 
-    Elektroheizstäbe -[#blue]-> thermischerSpeicher
+    Elektroheizstäbe -[#green]-> thermischerSpeicher
                                                                                 
     Batteriespeicher -[#blue]-> Elektroheizstäbe
 }

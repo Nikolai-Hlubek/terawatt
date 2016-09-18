@@ -1,0 +1,19 @@
+
+@startuml
+skinparam dpi 100
+
+state SoftwareInfrastructure {
+    vagrant --> github
+    vagrant : provision virtual machine
+    vagrant : everyone has same environment
+    github : version control
+    vagrant --> jupyter
+    jupyter : visualization
+    jupyter : prototyping
+    jupyter : documentation
+    jupyter : presentation
+    vagrant --> python
+    python : programming language
+    
+}
+@enduml
