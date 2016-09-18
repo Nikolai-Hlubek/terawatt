@@ -23,6 +23,9 @@ The environment variable that was automatically created for me had a keyname of 
 
 Adapt VirtualBox virtual machine path to your liking by starting VirtualBox and going to settings.
 
+### Adapt gitconfig ###
+
+Set github username and email in .gitconfig
 
 ### Push to github repository
 
