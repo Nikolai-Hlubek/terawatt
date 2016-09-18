@@ -19,9 +19,19 @@ https://www.virtualbox.org/wiki/Download_Old_Builds_5_0
 
 The environment variable that was automatically created for me had a keyname of "VBOX_MSI_INSTALL_PATH." However, the "base.rb" file inside one of the many subfolders of the Vagrant directory looks for the environment variable keyname "VBOX_INSTALL_PATH." So all I did was right-click on "My Computer"-->Properties-->Advanced System Settings-->Environment Variables. Here I scrolled down to find "VBOX_MSI_INSTALL_PATH" and I changed it to "VBOX_INSTALL_PATH."
 
-#### Set virtual machine folder
+#### Setup virtual machine
 
 Adapt VirtualBox virtual machine path to your liking by starting VirtualBox and going to settings.
+
+### Shared folders on virtual machine
+
+After having installed the virtual machine with ´vagrant up´
+Enable CD-ROM by virtual box gui. 
+Add guest additions from menu. 
+
+  mount /dev/sr0 /mnt
+
+run guest additions .sh file.
 
 ### Adapt gitconfig ###
 
