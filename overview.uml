@@ -1,0 +1,82 @@
+
+@startuml
+skinparam dpi 100
+
+
+state Energiecampus{
+
+    state Wärmeübergabestation{
+        Wärmeübergabestation : Fernwärmenetz zu Zentralheizung des Gebäudes. 
+        Elektroheizstäbe : Leistung (elektrisch) : 24 kW
+        Elektroheizstäbe : Leistung (thermisch) : 11 kW
+        thermischerSpeicher : 1000 l Wasser
+    }
+    
+    state Verbraucher {
+        Elektroauto : Lade- Entlade-Leistung : ?? kW
+        Elektroauto : Kapazität : 22 kWh
+        Raumheizung : ?? kW
+        Warmwasserbereitung : ?? kW
+    }                  
+    
+    Gasmischer : Wasserstoff aus Elektrolyse
+    Gasmischer : Methanhaltiges Gas aus Methanisierung
+    Gasmischer : Erdgas dem öffentlichen Netz
+    
+
+    
+    Photovoltaik : Leistung (elektrisch) : ca. 10 kW peak
+}
+
+state Versorger{
+    Strom -[#blue]-> Elektroauto 
+    Strom : elektrische Leistung
+    Erdgas -[#red]-> Gasmischer
+    Erdgas : chemische Leistung
+    Fernwärme -[#green]-> thermischerSpeicher
+    Fernwärme : thermische Leistung
+}
+
+state Energiecampus{
+    
+    Blockheizkraftwerk -[#green]-> thermischerSpeicher
+    Blockheizkraftwerk -[#blue]-> Elektroauto
+    Blockheizkraftwerk : Erdgas, Methanhaltiges Gas, Wasserstoff (maximal 20%)
+    Blockheizkraftwerk : Leistung (elektrisch) : 5-16 kW
+
+    Gasmischer -[#red]-> Blockheizkraftwerk
+
+    Wärmeübergabestation : Leistung (thermisch) : 15 kW
+    Wärmeübergabestation : Leistung (elektrisch) (power to heat) : 1.2-18 kW
+    Wärmeübergabestation : Rückkühler Leistung (thermisch): 45 kW
+
+    Batteriespeicher : Lithium-Ionen Akkumulatoren und Superkondensatoren. 
+    Batteriespeicher : Leistung (elektrisch): 50 kW
+    Batteriespeicher : Kapazität (elektrisch): 30 kWh + 300 Wh
+    Batteriespeicher : Latenzzeit: < 10 ms
+    Batteriespeicher -[#blue]-> Elektroauto
+
+    Photovoltaik -[#blue]-> Strom
+    Photovoltaik -[#blue]-> Elektroauto
+    Photovoltaik -[#blue]-> Batteriespeicher
+    Photovoltaik -[#blue]-> Elektrolyse
+    Photovoltaik -[#blue]-> Elektroheizstäbe
+                                                            
+    Elektrolyse : Leistung (elektrisch) : 10 kW
+    Elektrolyse : Wasserstoffproduktion : 2.92 m³/h
+    Batteriespeicher -[#blue]-> Elektrolyse
+    Elektrolyse -[#red]-> Gasmischer
+    Elektrolyse -[#red]-> Methanisierung
+
+    Methanisierung : Methanproduktion: 0.2 m³/h
+    Methanisierung -[#red]-> Gasmischer
+
+    thermischerSpeicher -[#green]-> Warmwasserbereitung
+    thermischerSpeicher -[#green]-> Raumheizung
+
+    Elektroheizstäbe -[#blue]-> thermischerSpeicher
+                                                                                
+    Batteriespeicher -[#blue]-> Elektroheizstäbe
+}
+
+@enduml 
