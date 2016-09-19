@@ -54,3 +54,7 @@ Add the following alias to the config file in .git/-directory:
 ## Good to know
 
 You need 0.1 kWh for bringing 1l water from 15°C to 100°C (without boiling).
+
+According to http://www.bmw.com/com/de/newvehicles/i/i3/2015/showroom/range_charging.html#comparison_calculator_charging_time it takes three hours at a maximum of 7.4kW to charge the i3 back to 80%. According to some articles, te charging process is artificially slowed down above 80% to save the battery.
+
+See: https://de.wikipedia.org/wiki/Watt_Peak for definition of kWp.
