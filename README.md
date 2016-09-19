@@ -37,6 +37,12 @@ run guest additions .sh file.
 
 Set github username and email in .gitconfig
 
+Add the following alias to the config file in .git/-directory:
+
+  [alias]
+    lg1 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+    lg = !"git lg1"
+
 ### Push to github repository
 
 ```git add <file>```
@@ -44,3 +50,7 @@ Set github username and email in .gitconfig
 ```git commit -a -m "Blah Blah Blah"```
 
 ```git push origin master```
+
+## Good to know
+
+You need 0.1 kWh for bringing 1l water from 15°C to 100°C (without boiling).
