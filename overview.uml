@@ -3,7 +3,7 @@
 skinparam dpi 100
 
 
-state Energiecampus{
+state Energiecampus {
 
     state Wärmeübergabestation {
         Wärmeübergabestation : Fernwärmenetz zu Zentralheizung des Gebäudes. 
