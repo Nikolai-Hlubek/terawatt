@@ -222,10 +222,11 @@ class Car(Device):
         return power
     
     def _do_consume(self, power):
-        additional_energy = self._to_energy(power.electrical) / 1.3
+        useable_power=min(self.charging_power_max, power.electrical)
+        additional_energy = self._to_energy(useable_power) / 1.3
         if self.energy_now.electrical + additional_energy < self.energy_max.electrical:
             self.energy_now.electrical += additional_energy
-            power.electrical = 0
+            power.electrical = power.electrical-useable_power
         
         return power
         
