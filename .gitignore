@@ -1,4 +1,5 @@
 .vagrant/
 .ipynb_checkpoints/
-.model.py.swp
+*.swp
 __pycache__/
+*.svg
