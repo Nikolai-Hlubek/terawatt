@@ -118,3 +118,9 @@ Data is appended to the file
 2. Start the mqtt/staubsauger.py
 3. Change the config file
 4. Watch the changes
+
+## Using the data
+
+According to the website, the data format is json. You can convert the retrieved data to csv via:
+
+  incsv -f json mqtt/data/<name>.raw
