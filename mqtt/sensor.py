@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import time
+import random
 
 import paho.mqtt.client as mqtt
 
@@ -15,4 +16,5 @@ client.loop_start()
 
 while True:
     time.sleep(2)
-    client.publish("test/temperature", "test")
+    client.publish("test/temperature", 
+        '{\n"value": '+str(random.uniform(0, 100))+'\n,"timestamp": 2016-09-23 10:00:00}')
