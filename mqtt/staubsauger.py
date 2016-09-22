@@ -16,7 +16,7 @@ class KleinerStaubsauger:
 
     def _on_message(self, client, userdata, msg):
         try:
-            f=open('data/'+self._name+'.raw', 'a')
+            f=open('/vagrant/data/'+self._name+'.raw', 'a')
             f.write(str(msg.payload)+'\n')
             f.close()
         except:
