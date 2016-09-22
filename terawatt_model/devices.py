@@ -359,8 +359,6 @@ class Methanization(Device):
 
         self.state.provide = True
         self.state.consume = True
-        
-        self._energy_produced()
 
     def update(self, power, state=None, power_requested=None):
         super().update(power, state)
@@ -387,13 +385,25 @@ class Methanization(Device):
         
         erc = self._to_energy(power_requested.chemical)
         
-        if self.energy_now.chemical > erc:
+        if self.energy_now.chemical >= erc:
             power.chemical = power_requested.chemical
             self.energy_now.chemical -= erc
             self.energy_provided.chemical += erc
         
         return power
 
+    def get_power_in_max(self):
+        """
+        The charging is usually reduced above 80% to enhance the livespan of the battery.
+        """
+        power_max = Power()
+        power_max.chemical = self._to_power(self.energy_methanization)
+        return power_max
+    
+    def get_power_out_max(self):
+        power_max = Power()
+        power_max.chemical = self._to_power(self.energy_methanization * self.efficiency)
+        return power_max
 
 # cogeneration.py
 class Cogeneration(Device):
@@ -405,29 +415,73 @@ class Cogeneration(Device):
     def __init__(self):
         super().__init__()  # parent init
         
-        self.electrical_efficiency = 0.315
-        self.power_electrical_min = 5000
-        self.power_electrical_max = 16000
+        self.chemical_to_electrical_efficiency = 0.315
+        self.power_out_min.electrical = 5000
+        self.power_out_max.electrical = 16000
+        self.energy_min_chemical_startup = 5000
+        self.energy_min_chemical_sustain = 100
+        self.is_running = False
         
         self.state.provide = True
         self.state.consume = True
         
-    def update(self, power, state=None):
+    def update(self, power, state=None, power_requested=None):
         super().update(power, state)
 
-        if self.state.consume and self.state.provide:
-            power = self._do_consume_and_provide(power)
+        if self.state.consume:
+            power = self._do_consume(power)
+        
+        if self.state.provide:
+            power = self._do_provide(power, power_requested)
+
+        self._log_current_power(power)
+        return power
+
+    def _do_consume(self, power):
+        self.energy_now.chemical += self._to_energy(power.chemical)
+        self.energy_consumed.chemical += self._to_energy(power.chemical)
+        power.chemical = 0
+        return power
+
+    def _do_provide(self, power, power_requested=None):
+        if power_requested == None:
+            return power
+
+        # Storage too empty to start cogeneration
+        if self.energy_now.chemical < self.energy_min_chemical_startup and not self.is_running:
+            return power
+        
+        # Storage too empty to continue cogeneration
+        if self.energy_now.chemical < self.energy_min_chemical_sustain and self.is_running:
+            self.is_running = False
+            return power
+        
+        if self.power_out_min.electrical < power_requested.electrical < self.power_out_max.electrical:
+            self.is_running = True
+            prc = self.power_conversion_electrical_to_chemical(power_requested.electrical)
+
+            power.electrical += power_requested.electrical
+            self.energy_now.chemical -= self._to_energy(prc.chemical)
+            self.energy_provided.electrical -= self._to_energy(power_requested.electrical)
+        elif power_requested.electrical > self.power_out_max.electrical:
+            self.is_running = True
+            prc = self.power_conversion_electrical_to_chemical(self.power_out_max.electrical)
+
+            power.electrical += self.power_out_max.electrical
+            self.energy_now.chemical -= self._to_energy(prc.chemical)
+            self.energy_provided.electrical -= self._to_energy(self.power_out_max.electrical)
 
         return power
 
-    def _do_consume_and_provide(self, power):
-        pe = power.chemical * self.electrical_efficiency
-        
-        if self.power_electrical_min < pe < self.power_electrical_max:
-            power.electrical = pe
-            power.chemical = 0
-            
-            self.energy_provided.electrical += self._to_energy(power.electrical)
-            self.energy_consumed.chemical += self._to_energy(power.chemical)
-        
+    def power_conversion_electrical_to_chemical(self, power_electrical):
+        power = Power()
+        if power_electrical < self.power_out_min.electrical:
+            pass  # Cogeneration doesn't work here
+        elif self.power_out_min.electrical < power_electrical < self.power_out_max.electrical:
+            power.chemical = power_electrical / self.chemical_to_electrical_efficiency
+        else:
+            power.chemical = self.power_out_max.electrical / self.chemical_to_electrical_efficiency
         return power
+        
+        
+        

@@ -30,6 +30,7 @@ class Device:
         self.energy_max = Energy()
         self.power = Power()  # For diagnosis
         self.power_in_max = Power()
+        self.power_out_min = Power()
         self.power_out_max = Power()
 
     def update(self, power, state=None):
