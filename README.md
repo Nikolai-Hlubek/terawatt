@@ -59,7 +59,22 @@ According to http://www.bmw.com/com/de/newvehicles/i/i3/2015/showroom/range_char
 
 See: https://de.wikipedia.org/wiki/Watt_Peak for definition of kWp.
 
-## MQTT
+According to Wikipedia, the following useful heat values apply(approx.):
+
+|Fuel         |Useful heat in kWh/m<sup>3<sup>|
+|-------------|-------------------------------|
+|Petroleum gas|12kWh/m<sup>3</sup>            |
+|Hydrogen     |3.3                            |
+|Methane      |11                             |
+
+According to the values from the website this means:
+
+|Fuel         |Production rate under full force|Production|
+|-------------|--------------------------------|----------|
+|Hydrogen     |2.92m<sup>3</sup>/h             |9.5kWh/h  |
+|Methan       |0.2m<sup>3</sup>/h              |2.2kWh/h  |
+
+### MQTT
 
 MQTT (Mesage Queue Telemetry Transport) is a transport protocoll for unreliable networks.
 
@@ -71,28 +86,28 @@ Once installed, the mosquitto service is automatically started.
 
 The subfolder mqtt contains two examples of how a sensor (sensor.py) and and actor (actor.py) works. In the course of this project, we are focussing on the actor part. The sensor data should come from the different devices.
 
-### Start the sensor
+#### Start the sensor
 
   python3 sensor.py
 
-### Start the actor
+#### Start the actor
 
   python3 actor.py
 
-## Subscriptions
+#### Subscriptions
 
 Subscriptions use a topic filter. Topic levels are separated by "/". There are two wildcards:
 
 * #: This level and **all** below. If used, has to be the last character in a topic filter.
 * +: This level with all direct children. Something like "first/+/temperature" is possible.
 
-## Service levels
+#### Service levels
 
 * 0: At most once
 * 1: At least once
 * 2: Exactly once
 
-## Payloads
+#### Payloads
 
 Although the mqtt specification is payload agnostic, the paho implementation for python insists on the following data types:
 
@@ -102,7 +117,7 @@ Although the mqtt specification is payload agnostic, the paho implementation for
 * float
 * None
 
-## Starting the data download
+#### Starting the data download
 
 Start the programm staubsauger.py. It will read the config file staubsauger_config.txt every minute and updates the mqttt-clients.
 
@@ -112,14 +127,14 @@ The data is retrieved via mqqt and saved in the folder data with a file name cor
 
 Data is appended to the file
 
-### Test
+#### Test
 
 1. Start the mqtt/sensor.py
 2. Start the mqtt/staubsauger.py
 3. Change the config file
 4. Watch the changes
 
-## Using the data
+#### Using the data
 
 According to the website, the data format is json. You can convert the retrieved data to csv via:
 
