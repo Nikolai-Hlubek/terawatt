@@ -139,3 +139,13 @@ Data is appended to the file
 According to the website, the data format is json. You can convert the retrieved data to csv via:
 
   incsv -f json mqtt/data/<name>.raw
+
+### Getting the topics
+
+The staubsauger config can be automatically derived from the website. There is a small python script, which will analyse the website.
+
+  cd websiteanalysis
+  wget http://www.what-the-data.com/die-technik
+  python3 analysis.py
+
+It creates the file staubsauger_config.txt, which can be used to start the staubsauger process for getting the data.

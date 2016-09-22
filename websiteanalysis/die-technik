@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="kSUDa8GHdRuzjcQx5O5PIjBvF0FSpz8dUCBuBX4jOVw" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://www.what-the-data.com/xmlrpc.php">
+
+<title>Die Technik | What The Data!?</title>
+
+<!-- SEO Ultimate (http://www.seodesignsolutions.com/wordpress-seo/) -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Die Technik" />
+	<meta property="og:url" content="http://www.what-the-data.com/die-technik/" />
+	<meta property="article:published_time" content="2016-08-19" />
+	<meta property="article:modified_time" content="2016-09-22" />
+	<meta property="og:site_name" content="What The Data!? Hackathon" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@wtd_hackathon" />
+	<meta name="google-site-verification" content="kSUDa8GHdRuzjcQx5O5PIjBvF0FSpz8dUCBuBX4jOVw" />
+<!-- /SEO Ultimate -->
+
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="What The Data!? &raquo; Feed" href="http://www.what-the-data.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="What The Data!? &raquo; Comments Feed" href="http://www.what-the-data.com/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.what-the-data.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6.1"}};
+			!function(a,b,c){function d(a){var c,d,e,f,g,h=b.createElement("canvas"),i=h.getContext&&h.getContext("2d"),j=String.fromCharCode;if(!i||!i.fillText)return!1;switch(i.textBaseline="top",i.font="600 32px Arial",a){case"flag":return i.fillText(j(55356,56806,55356,56826),0,0),!(h.toDataURL().length<3e3)&&(i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,65039,8205,55356,57096),0,0),c=h.toDataURL(),i.clearRect(0,0,h.width,h.height),i.fillText(j(55356,57331,55356,57096),0,0),d=h.toDataURL(),c!==d);case"diversity":return i.fillText(j(55356,57221),0,0),e=i.getImageData(16,16,1,1).data,f=e[0]+","+e[1]+","+e[2]+","+e[3],i.fillText(j(55356,57221,55356,57343),0,0),e=i.getImageData(16,16,1,1).data,g=e[0]+","+e[1]+","+e[2]+","+e[3],f!==g;case"simple":return i.fillText(j(55357,56835),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode8":return i.fillText(j(55356,57135),0,0),0!==i.getImageData(16,16,1,1).data[0];case"unicode9":return i.fillText(j(55358,56631),0,0),0!==i.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='siteorigin-panels-front-css'  href='http://www.what-the-data.com/wp-content/plugins/siteorigin-panels/css/front.css?ver=2.4.15' type='text/css' media='all' />
+<link rel='stylesheet' id='perth-bootstrap-css'  href='http://www.what-the-data.com/wp-content/themes/perth/css/bootstrap/bootstrap.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.what-the-data.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-image-default-1c389ca87c1a-css'  href='http://www.what-the-data.com/wp-content/uploads/siteorigin-widgets/sow-image-default-1c389ca87c1a.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-image-default-b5a0057b6480-css'  href='http://www.what-the-data.com/wp-content/uploads/siteorigin-widgets/sow-image-default-b5a0057b6480.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='ufbl-custom-select-css-css'  href='http://www.what-the-data.com/wp-content/plugins/ultimate-form-builder-lite/css/jquery.selectbox.css?ver=1.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ufbl-front-css-css'  href='http://www.what-the-data.com/wp-content/plugins/ultimate-form-builder-lite/css/frontend.css?ver=1.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='perth-body-fonts-css'  href='//fonts.googleapis.com/css?family=Roboto%3A500%2C300%2C500italic%2C300italic&#038;ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='perth-headings-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A400italic%2C600italic%2C400%2C600%2C800&#038;ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='perth-style-css'  href='http://www.what-the-data.com/wp-content/themes/perth/style.css?ver=4.6.1' type='text/css' media='all' />
+<style id='perth-style-inline-css' type='text/css'>
+@media only screen and (min-width: 992px) {.header-image { height:600px; }}
+.fact,.header-button.left-button:hover,.perth_contact_info_widget span,.entry-title a:hover,.post-title a:hover,.widget-area .widget a:hover,.main-navigation a:hover,a,a:hover,button,.button,input[type="button"],input[type="reset"],input[type="submit"] { color:#64b781;}
+.header-button.left-button,.site-footer,.go-top,.project-filter li,.owl-theme .owl-controls .owl-page span,.social-menu-widget li,.skill-progress,.tagcloud a:hover,.comment-navigation .nav-next,.posts-navigation .nav-next,.post-navigation .nav-next,.comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous,button:hover,.button:hover,input[type="button"]:hover,input[type="reset"]:hover,input[type="submit"]:hover { background-color:#64b781;}
+@media only screen and (min-width: 1025px) {.main-navigation li::after { background-color:#64b781;}}
+@-webkit-keyframes preload {from {background-color: #333;} to {background-color:#64b781;}}
+@keyframes preload {from {background-color: #333;} to {background-color: #64b781;} }
+.fact,.header-button.left-button,.footer-column .widget-title,.widget-area .widget-title,.button,input[type="button"],input[type="reset"],input[type="submit"] { border-color:#64b781;}
+.svg-container.service-icon-svg,.employee-svg { fill:#64b781;}
+.project-title{ background-color:rgba(100,183,129,0.6);}
+.site-header { background-color:#ffffff;}
+.site-title a, .site-title a:hover { color:#2B3C4D}
+.site-description { color:#808D99}
+.main-navigation a { color:#53565A}
+.main-navigation ul ul a { color:#d5d5d5}
+.main-navigation ul ul li { background-color:#242D37}
+.header-text { color:#ffffff}
+body { color:#798A9B}
+.footer-widgets { background-color:#242D37}
+.overlay { background-color:#1c1c1c}
+.header-overlay { background-color:#315B9D}
+.site-title { font-size:36px; }
+.site-description { font-size:14px; }
+.main-navigation li { font-size:13px; }
+h1 { font-size:36px; }
+h2 { font-size:30px; }
+h3 { font-size:24px; }
+h4 { font-size:18px; }
+h5 { font-size:14px; }
+h6 { font-size:12px; }
+body { font-size:14px; }
+.panel-grid .widget-title { font-size:36px; }
+
+</style>
+<link rel='stylesheet' id='perth-font-awesome-css'  href='http://www.what-the-data.com/wp-content/themes/perth/fonts/font-awesome.min.css?ver=4.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://www.what-the-data.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.what-the-data.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/plugins/ultimate-form-builder-lite/js/jquery.selectbox-0.2.min.js?ver=1.2.5'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var frontend_js_obj = {"default_error_message":"This field is required","ajax_url":"http:\/\/www.what-the-data.com\/wp-admin\/admin-ajax.php","ajax_nonce":"802a9a61cf"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/plugins/ultimate-form-builder-lite/js/frontend.js?ver=1.2.5'></script>
+<link rel='https://api.w.org/' href='http://www.what-the-data.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.what-the-data.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.what-the-data.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.6.1" />
+<link rel="canonical" href="http://www.what-the-data.com/die-technik/" />
+<link rel='shortlink' href='http://wp.me/P7JphT-4F' />
+<link rel="alternate" type="application/json+oembed" href="http://www.what-the-data.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.what-the-data.com%2Fdie-technik%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.what-the-data.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.what-the-data.com%2Fdie-technik%2F&#038;format=xml" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-79978139-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style>	<style type="text/css">
+		.header-image {
+			background-image: url(http://www.what-the-data.com/wp-content/uploads/2016/08/header_crazy.jpg);
+			display: block;
+		}
+	</style>
+	<style type="text/css" media="all" id="siteorigin-panels-grids-wp_head">/* Layout 289 */ #pg-289-0 , #pg-289-1 , #pg-289-2 , #pg-289-3 , #pg-289-4 , #pg-289-5 , #pg-289-6 , #pg-289-7 , #pg-289-8 , #pg-289-9 , #pg-289-10 , #pg-289-11 , #pg-289-12 , #pg-289-13 , #pg-289-14 , #pg-289-15 , #pl-289 .panel-grid-cell .so-panel , #pl-289 .panel-grid-cell .so-panel:last-child { margin-bottom:0px } #pg-289-0 .panel-grid-cell , #pg-289-1 .panel-grid-cell , #pg-289-16 .panel-grid-cell { float:none } #pgc-289-2-0 , #pgc-289-3-0 , #pgc-289-4-0 , #pgc-289-5-0 , #pgc-289-6-0 , #pgc-289-7-0 , #pgc-289-8-0 , #pgc-289-9-0 , #pgc-289-10-0 , #pgc-289-11-0 , #pgc-289-12-0 , #pgc-289-13-0 , #pgc-289-14-0 , #pgc-289-15-0 { width:78.045% } #pgc-289-2-1 , #pgc-289-3-1 , #pgc-289-4-1 , #pgc-289-5-1 , #pgc-289-6-1 , #pgc-289-7-1 , #pgc-289-8-1 , #pgc-289-9-1 , #pgc-289-10-1 , #pgc-289-11-1 , #pgc-289-12-1 , #pgc-289-13-1 , #pgc-289-14-1 , #pgc-289-15-1 { width:21.955% } #pg-289-2 .panel-grid-cell , #pg-289-3 .panel-grid-cell , #pg-289-4 .panel-grid-cell , #pg-289-5 .panel-grid-cell , #pg-289-6 .panel-grid-cell , #pg-289-7 .panel-grid-cell , #pg-289-8 .panel-grid-cell , #pg-289-9 .panel-grid-cell , #pg-289-10 .panel-grid-cell , #pg-289-11 .panel-grid-cell , #pg-289-12 .panel-grid-cell , #pg-289-13 .panel-grid-cell , #pg-289-14 .panel-grid-cell , #pg-289-15 .panel-grid-cell { float:left } #pg-289-0 , #pg-289-1 , #pg-289-2 , #pg-289-3 , #pg-289-4 , #pg-289-5 , #pg-289-6 , #pg-289-7 , #pg-289-8 , #pg-289-9 , #pg-289-10 , #pg-289-11 , #pg-289-12 , #pg-289-13 , #pg-289-14 , #pg-289-15 , #pg-289-16 { margin-left:-15px;margin-right:-15px } #pg-289-0 .panel-grid-cell , #pg-289-1 .panel-grid-cell , #pg-289-2 .panel-grid-cell , #pg-289-3 .panel-grid-cell , #pg-289-4 .panel-grid-cell , #pg-289-5 .panel-grid-cell , #pg-289-6 .panel-grid-cell , #pg-289-7 .panel-grid-cell , #pg-289-8 .panel-grid-cell , #pg-289-9 .panel-grid-cell , #pg-289-10 .panel-grid-cell , #pg-289-11 .panel-grid-cell , #pg-289-12 .panel-grid-cell , #pg-289-13 .panel-grid-cell , #pg-289-14 .panel-grid-cell , #pg-289-15 .panel-grid-cell , #pg-289-16 .panel-grid-cell { padding-left:15px;padding-right:15px } @media (max-width:780px){ #pg-289-0 .panel-grid-cell , #pg-289-1 .panel-grid-cell , #pg-289-2 .panel-grid-cell , #pg-289-3 .panel-grid-cell , #pg-289-4 .panel-grid-cell , #pg-289-5 .panel-grid-cell , #pg-289-6 .panel-grid-cell , #pg-289-7 .panel-grid-cell , #pg-289-8 .panel-grid-cell , #pg-289-9 .panel-grid-cell , #pg-289-10 .panel-grid-cell , #pg-289-11 .panel-grid-cell , #pg-289-12 .panel-grid-cell , #pg-289-13 .panel-grid-cell , #pg-289-14 .panel-grid-cell , #pg-289-15 .panel-grid-cell , #pg-289-16 .panel-grid-cell { float:none;width:auto } #pgc-289-2-0 , #pgc-289-3-0 , #pgc-289-4-0 , #pgc-289-5-0 , #pgc-289-6-0 , #pgc-289-7-0 , #pgc-289-8-0 , #pgc-289-9-0 , #pgc-289-10-0 , #pgc-289-11-0 , #pgc-289-12-0 , #pgc-289-13-0 , #pgc-289-14-0 , #pgc-289-15-0 , #pl-289 .panel-grid .panel-grid-cell-mobile-last { margin-bottom:0px } #pl-289 .panel-grid , #pl-289 .panel-grid-cell {  } #pl-289 .panel-grid .panel-grid-cell-empty { display:none }  } </style><link rel="icon" href="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/logo_120_web.jpg?fit=32%2C32" sizes="32x32" />
+<link rel="icon" href="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/logo_120_web.jpg?fit=120%2C120" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/logo_120_web.jpg?fit=120%2C120" />
+<meta name="msapplication-TileImage" content="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/logo_120_web.jpg?fit=120%2C120" />
+</head>
+
+<body class="page page-id-289 page-template page-template-page-templates page-template-page_front-page page-template-page-templatespage_front-page-php siteorigin-panels">
+<div class="preloader">
+	<div class="preload-inner">
+		<div class="box1 preloader-box"></div>
+		<div class="box2 preloader-box"></div>
+		<div class="box3 preloader-box"></div>
+		<div class="box4 preloader-box"></div>
+	</div>
+</div>	
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header clearfix" role="banner">
+		<div class="container">
+						<div class="site-branding col-md-4 col-sm-6 col-xs-12">
+				<a href="http://www.what-the-data.com/" title="What The Data!?"><img class="site-logo" src="http://www.what-the-data.com/wp-content/uploads/2016/07/web_logo_pink.png" alt="What The Data!?" /></a>			</div>
+						<nav id="site-navigation" class="main-navigation col-md-8" role="navigation">
+				<div class="menu-clear-container"><ul id="primary-menu" class="menu"><li id="menu-item-80" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-80"><a href="http://www.what-the-data.com/">Home</a></li>
+<li id="menu-item-419" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-419"><a href="http://www.what-the-data.com/anmeldung/">Anmeldung</a></li>
+<li id="menu-item-418" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-418"><a href="http://www.what-the-data.com/programm/">Das Programm</a></li>
+<li id="menu-item-417" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-289 current_page_item menu-item-417"><a href="http://www.what-the-data.com/die-technik/">Die Technik</a></li>
+<li id="menu-item-112" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-112"><a href="http://www.what-the-data.com/updates/">Updates</a></li>
+<li id="menu-item-114" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-114"><a href="http://www.what-the-data.com/contact/">Kontakt</a></li>
+</ul></div>			</nav><!-- #site-navigation -->
+			<nav class="mobile-nav"></nav>
+		</div>
+	</header><!-- #masthead -->
+	<div class="header-clone"></div>
+
+	
+	<div id="content" class="site-content">
+		<div id="content-wrapper" class="container">
+	<div id="primary" class="fullwidth">
+		<main id="main" class="site-main" role="main">
+
+							<div id="pl-289"><div class="panel-grid" id="pg-289-0" ><div style="padding: 40px 0; " class="panel-row-style" ><div class="panel-grid-cell panel-grid-cell-empty" id="pgc-289-0-0" ></div></div></div><div class="panel-grid" id="pg-289-1" ><div style="padding: 0px 0; " class="panel-row-style" ><div class="panel-grid-cell" id="pgc-289-1-0" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-1-0-0" data-index="0"><div class="so-widget-sow-image so-widget-sow-image-default-1c389ca87c1a">
+
+<div class="sow-image-container">
+	<img src="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?fit=1141%2C347" width="1141" height="347" srcset="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?w=1141 1141w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?resize=300%2C91 300w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?resize=768%2C234 768w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?resize=1024%2C311 1024w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?resize=410%2C125 410w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?resize=100%2C30 100w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/pfeile_tech.png?resize=275%2C84 275w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div><div class="panel-grid" id="pg-289-2" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-2-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-2-0-0" data-index="1">			<div class="textwidget"><h3>Datenzugriff</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Zugriff</span><span class="" data-url="" data-target="blank">Berechtigungen</span><span class="" data-url="" data-target="blank">Datenpunkt-Merkmale</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+
+<h3 id="toc_2">Cybus</h3>
+
+<p>Der Zugang zu den Daten erfolgt bei WHAT THE DATA!? über den Cybus am Energie-Campus. Das hat u.a. folgende Vorteile:</p>
+
+<ul>
+<li>Es besteht ein einheitliches Interface für die unterschiedlichsten Gerätetypen</li>
+<li>Der direkte Zugriff auf eine Anlage wird verhindert</li>
+<li>Lese- und Schreibzugriff wird auf Ebene der Datenpunkte verwaltet</li>
+</ul>
+
+<p>Den Zugriff auf die Datenpunkte erfolgt über MQTT und HTTP je nach erteilter Berechtigung lesend oder schreibend. Der Cybus am Energie-Campus ist global erreichbar unter dem Hostname</p>
+
+<div><pre><code class="language-none">energie-campus.cybus.io</code></pre></div>
+
+<h3 id="toc_3">MQTT</h3>
+
+<p>Der MQTT-Broker am Energie-Campus ist über die Standard-Ports <strong>1883</strong> (mqtt) und <strong>8883</strong> (mqtts) zu erreichen. Zum Aufbau der Verbindung bedarf es der Angabe von <strong>Username</strong> und <strong>Passwort</strong>.</p>
+
+<p>Hinweis: MQTT-Clients müssen eine eindeutige ClientID verwenden. Würde ein zweiter Client eine Verbindung mit der selben ClientID aufbauen, so würde die Verbindung des ersten Clients getrennt werden.</p>
+
+<h3 id="toc_4">HTTP</h3>
+
+<p>Datenpunkte können mit HTTP <strong>GET</strong> gelesen und mit HTTP <strong>POST</strong> geschrieben werden. Es bedarf der Angabe von <em>Username</em> und <em>Passwort</em> mittels <strong>Basic-Auth</strong>.</p>
+
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<p>Der Zugriff auf die Datenpunkte am Energie-Campus ist über den Cybus <em>Access Control Layer</em> geschützt. Jedes Team erhält zu Beginn des Hackathons beim <strong>Berechtiger</strong> einen Zugang, der den lesenden Zugriff auf einige ausgewählte Datenpunkte erlaubt (die Berechtigung wird im Laufe des Hackathons auf alle benötigten Anlagen erweitert).
+Schreibender Zugriff wird nach Rücksprache mit einem Sachkundigen für eine Anlage vom <strong>Berechtiger</strong> vergeben.</p>
+
+<h3 id="toc_6">Der &quot;Berechtiger&quot;</h3>
+
+<p>Der Berechtiger ist bei WHAT THE DATA!? die Ansprechperson für Datenzugriffsberechtigungen. Seine Aufgabe ist es, den Zugang zu Datenpunkten möglich zu machen, indem er</p>
+
+<ul>
+<li>Zugriffsberechtigungen erweitert</li>
+<li>Datenpunkte hinzufügt</li>
+<li>weitere Systeme einpflegt</li>
+</ul>
+
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<h3 id="toc_8">Payload-Format</h3>
+
+<p>Die Payload Syntax aller Datenpunkte ist einfach und einheitlich gehalten, sofern nicht anders angegeben. </p>
+
+<p>JSON-Payload mit Value-Timestamp Tupel:</p>
+
+<div><pre><code class="language-javascript">{
+    &quot;value&quot;: 42.3, 
+    &quot;timestamp&quot;: 2016-09-23 10:00:00
+}</code></pre></div>
+
+<h3 id="toc_9">Genauigkeit</h3>
+
+<p>Sofern nicht anders definiert, wird die Genauigkeit aller Werte auf <strong>0.001</strong> beschränkt.</p>
+
+<h3 id="toc_10">Frequenz</h3>
+
+<p>Anstatt eines festen Zeitrasters, werden Daten bei <strong>Wertänderungen</strong> übermittelt. Die maximale Frequenz beträgt <strong>1/sec</strong>, sofern nicht anders definiert. Ändert die Datenquelle den Wert öfters innerhal eines Takts, wird immer nur die letzte Änderung innerhalb des Takts berücksichtigt.</p>
+
+<h3 id="toc_11">Persistenz</h3>
+
+<p>Daten werden vom Cybus mit dem Retain-Flag gepublished, sofern nicht anders angegeben. Dies bedeutet, dass ein MQTT-Client sofort die letzte Nachricht übermittelt bekommt, wenn er auf ein Topic subscribed, egal wie alt die Nachricht ist.</p>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-2-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-2-1-0" data-index="2"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/cybus_726x194-PNG.png?fit=726%2C194" width="726" height="194" srcset="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/cybus_726x194-PNG.png?w=726 726w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/cybus_726x194-PNG.png?resize=300%2C80 300w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/cybus_726x194-PNG.png?resize=410%2C110 410w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/cybus_726x194-PNG.png?resize=100%2C27 100w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/07/cybus_726x194-PNG.png?resize=275%2C73 275w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-3" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell panel-grid-cell-mobile-last" id="pgc-289-3-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-3-0-0" data-index="3"><div style="padding: 0px 0px 0px 0px;" class="panel-widget-style" >			<div class="textwidget"><h3>Heizung</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Am Energie-Campus bestehen mehrere Heizkreisläufe, die unabhängig voneinander überwacht und angesteuert werden können.
+</div>
+<div class="su-tabs-pane su-clearfix">
+<h5 id="toc_19">Lesen</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/aussenfuehler/norden/temperatur</code></td>
+            <td>°C</td>
+            <td>Außentemperatur Nord</td>
+        </tr>
+        <tr>
+            <td><code>/aussenfuehler/sueden/temperatur</code></td>
+            <td>°C</td>
+            <td>Außentemperatur Süd</td>
+        </tr>
+        <tr>
+            <td><code>/betonkern/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck der Betonkernaktivierung</td>
+        </tr>
+        <tr>
+            <td><code>/betonkern/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur der Betonkernaktivierung</td>
+        </tr>
+        <tr>
+            <td><code>/betonkern/ruecklauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Rücklaufs der Betonkernaktivierung</td>
+        </tr>
+        <tr>
+            <td><code>/betonkern/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck der Betonkernaktivierung</td>
+        </tr>
+        <tr>
+            <td><code>/betonkern/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur der Betonkernaktivierung</td>
+        </tr>
+        <tr>
+            <td><code>/bhkw/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/bhkw/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/bhkw/vorlauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Vorlaufs des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/erdgeschoss/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck der Heizung im Erdgeschoss</td>
+        </tr>
+        <tr>
+            <td><code>/erdgeschoss/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur der Heizung im Erdgeschoss</td>
+        </tr>
+        <tr>
+            <td><code>/erdgeschoss/ruecklauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Rücklaufs der Heizung im Erdgeschoss</td>
+        </tr>
+        <tr>
+            <td><code>/erdgeschoss/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck der Heizung im Erdgeschoss</td>
+        </tr>
+        <tr>
+            <td><code>/erdgeschoss/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur der Heizung im Erdgeschoss</td>
+        </tr>
+        <tr>
+            <td><code>/obergeschoss/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck der Heizung im im 1.OG</td>
+        </tr>
+        <tr>
+            <td><code>/obergeschoss/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur der Heizung im 1.OG</td>
+        </tr>
+        <tr>
+            <td><code>/obergeschoss/ruecklauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Rücklaufs der Heizung im 1.OG</td>
+        </tr>
+        <tr>
+            <td><code>/obergeschoss/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck der Heizung im 1.OG</td>
+        </tr>
+        <tr>
+            <td><code>/obergeschoss/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur der Heizung im 1.OG</td>
+        </tr>
+        <tr>
+            <td><code>/raumlufttechnik/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck der Raumlufttechnik</td>
+        </tr>
+        <tr>
+            <td><code>/raumlufttechnik/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur der Raumlufttechnik</td>
+        </tr>
+        <tr>
+            <td><code>/raumlufttechnik/ruecklauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Rücklaufs der Raumlufttechnik</td>
+        </tr>
+        <tr>
+            <td><code>/raumlufttechnik/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck der Raumlufttechnik</td>
+        </tr>
+        <tr>
+            <td><code>/raumlufttechnik/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur der Raumlufttechnik</td>
+        </tr>
+        <tr>
+            <td><code>/werkhalle/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck der Deckenstrahlplatten</td>
+        </tr>
+        <tr>
+            <td><code>/werkhalle/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur der Deckenstrahlplatten</td>
+        </tr>
+        <tr>
+            <td><code>/werkhalle/ruecklauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Rücklaufs der Deckenstrahlplatten</td>
+        </tr>
+        <tr>
+            <td><code>/werkhalle/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck der Deckenstrahlplatten</td>
+        </tr>
+        <tr>
+            <td><code>/werkhalle/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur der Deckenstrahlplatten</td>
+        </tr>
+    </tbody>
+</table>
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div></div><div class="panel-grid-cell panel-grid-cell-empty" id="pgc-289-3-1" ></div></div></div><div class="panel-grid" id="pg-289-4" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell panel-grid-cell-mobile-last" id="pgc-289-4-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-4-0-0" data-index="4"><div style="padding: 0px 0px 0px 0px;" class="panel-widget-style" >			<div class="textwidget"><h3>Lüftung</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Die Lüftungsanlage am Energie-Campus kann überwacht und angesteuert werden.
+</div>
+<div class="su-tabs-pane su-clearfix">
+<h5 id="toc_21">Lesen</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/zuluft/druck</code></td>
+            <td>bar</td>
+            <td>Zuluftdruck (max 400bar)</td>
+        </tr>
+        <tr>
+            <td><code>/abluft/druck</code></td>
+            <td>bar</td>
+            <td>Abluftdruck (max 400bar)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h5 id="toc_22">Schreiben</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/status/set</code></td>
+            <td></td>
+            <td>Lüftung Einschalten <em>(1=Auto, 3=Ein)</em></td>
+        </tr>
+    </tbody>
+</table>
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div></div><div class="panel-grid-cell panel-grid-cell-empty" id="pgc-289-4-1" ></div></div></div><div class="panel-grid" id="pg-289-5" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell panel-grid-cell-mobile-last" id="pgc-289-5-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-5-0-0" data-index="5"><div style="padding: 0px 0px 0px 0px;" class="panel-widget-style" >			<div class="textwidget"><h3>Kälte</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Die Kälteanlage am Energie-Campus kann überwacht und angesteuert werden.
+</div>
+<div class="su-tabs-pane su-clearfix">
+<h5 id="toc_24">Lesen</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/netz/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck im Kältenetz</td>
+        </tr>
+        <tr>
+            <td><code>/netz/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur im Kältenetz</td>
+        </tr>
+        <tr>
+            <td><code>/netz/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck im Kältenetz</td>
+        </tr>
+        <tr>
+            <td><code>/netz/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur im Kältenetz</td>
+        </tr>
+        <tr>
+            <td><code>/netz/vorlauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom im Kältenetz</td>
+        </tr>
+        <tr>
+            <td><code>/primaerkreis/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck vor dem Kälteübertrager (Primärkreis)</td>
+        </tr>
+        <tr>
+            <td><code>/primaerkreis/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur vor dem Kälteübertrager (Primärkreis)</td>
+        </tr>
+        <tr>
+            <td><code>/primaerkreis/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck vor dem Kälteübertrager (Primärkreis)</td>
+        </tr>
+        <tr>
+            <td><code>/primaerkreis/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur vor dem Kälteübertrager (Primärkreis)</td>
+        </tr>
+        <tr>
+            <td><code>/sekundaerkreis/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck des Zubringers der RLT hinter dem Übertrager (sekundär)</td>
+        </tr>
+        <tr>
+            <td><code>/sekundaerkreis/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur des Zubringers der RLT hinter dem Übertrager (sekundär)</td>
+        </tr>
+        <tr>
+            <td><code>/sekundaerkreis/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck des Zubringers der RLT hinter dem Übertrager (sekundär)</td>
+        </tr>
+        <tr>
+            <td><code>/sekundaerkreis/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur des Zubringers der RLT hinter dem Übertrager (sekundär)</td>
+        </tr>
+        <tr>
+            <td><code>/serverraum/ruecklauf/druck</code></td>
+            <td>bar</td>
+            <td>Rücklaufdruck der Kühlung im Serverraum</td>
+        </tr>
+        <tr>
+            <td><code>/serverraum/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur der Kühlung im Serverraum</td>
+        </tr>
+        <tr>
+            <td><code>/serverraum/vorlauf/druck</code></td>
+            <td>bar</td>
+            <td>Vorlaufdruck der Kühlung im Serverraum</td>
+        </tr>
+        <tr>
+            <td><code>/serverraum/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur der Kühlung im Serverraum</td>
+        </tr>
+        <tr>
+            <td><code>/serverraum/vorlauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom der Kühlung im Serverraum</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/entladung/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur bei Entladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/entladung/ruecklauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Rücklaufs bei Entladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/entladung/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur bei Entladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/entladung/vorlauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Vorlaufs bei Entladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/ladung/ruecklauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Rücklauftemperatur bei Ladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/ladung/ruecklauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Rücklaufs bei Ladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/ladung/vorlauf/temperatur</code></td>
+            <td>°C</td>
+            <td>Vorlauftemperatur bei Ladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/ladung/vorlauf/volumen</code></td>
+            <td>m³/h</td>
+            <td>Volumenstrom des Vorlaufs bei Ladung des Kaltwasserspeichers</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/mitte/temperatur</code></td>
+            <td>°C</td>
+            <td>Kaltwasserspeicher Temperatur mitte</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/oben/temperatur</code></td>
+            <td>°C</td>
+            <td>Kaltwasserspeicher Temperatur oben</td>
+        </tr>
+        <tr>
+            <td><code>/speicher/unten/temperatur</code></td>
+            <td>°C</td>
+            <td>Kaltwasserspeicher Temperatur unten</td>
+        </tr>
+    </tbody>
+</table>
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div></div><div class="panel-grid-cell panel-grid-cell-empty" id="pgc-289-5-1" ></div></div></div><div class="panel-grid" id="pg-289-6" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-6-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-6-0-0" data-index="6"><div style="padding: 0px 0px 0px 0px;" class="panel-widget-style" >			<div class="textwidget"><h3>Blockheizkraftwerk</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Tech. Details</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Blockheizkraftwerke (BHKW) arbeiten nach dem Prinzip der Kraft-Wärme-Kopplung, bei der gleichzeitig Wärme und Strom erzeugt wird. Das am Energie Campus eingesetzte Modell besitzt einen erdgasbetriebenen Ottomotor, der einen Generator zur Stromerzeugung antreibt. Die dabei entstehende Abwärme wird ausgekoppelt und zur Raumheizung und Warmwasser-Bereitung genutzt.
+</div>
+<div class="su-tabs-pane su-clearfix">
+Modell: Mephisto G16+<br>
+Kraftstof:f Erdgas (Flüssiggas möglich)<br>
+el. Leistung: 5-16 kW<br>
+el. Wirkungsgrad: 31,5%<br>
+Gesamtwirkungsgrad: 101,0%<br>
+Bis zu 20% Wasserstoffanteil möglich<br>
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>leistung/elektrisch</td>
+<td>kW</td>
+<td>Elektrische Istleistung des BHKWs</td>
+</tr>
+<tr>
+<td>leistung/thermisch</td>
+<td>kW</td>
+<td>Thermische Istleistung des BHKWs</td>
+</tr>
+<tr>
+<td>vorlauf/temperatur</td>
+<td>°C</td>
+<td>Vorlauftemperatur des BHKWs</td>
+</tr>
+<tr>
+<td>ruecklauf/temperatur</td>
+<td>°C</td>
+<td>Rücklauftemperatur des BHKWs</td>
+</tr>
+<tr>
+<td>oel</td>
+<td>l</td>
+<td>Verbrauchtes Öl des BHKWs</td>
+</tr>
+</tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div></div><div class="panel-grid-cell" id="pgc-289-6-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-6-1-0" data-index="7"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild1.png?fit=145%2C166" width="145" height="166" srcset="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild1.png?w=145 145w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild1.png?resize=100%2C114 100w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-7" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell panel-grid-cell-mobile-last" id="pgc-289-7-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-7-0-0" data-index="8"><div style="padding: 0px 0px 0px 0px;" class="panel-widget-style" >			<div class="textwidget"><h3>Raumluft</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+In den Anlagenräumen wird die Konzentration von Gasen in der Raumluft gemessen.
+</div>
+<div class="su-tabs-pane su-clearfix">
+<h5 id="toc_29">Lesen</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/gas/elektrolyse/methan</code></td>
+            <td>%</td>
+            <td>CH4 Sensor im Elektrolyse-Raum</td>
+        </tr>
+        <tr>
+            <td><code>/gas/elektrolyse/wasserstoff</code></td>
+            <td>%</td>
+            <td>H2 Sensor im Elektrolyse-Raum</td>
+        </tr>
+        <tr>
+            <td><code>/gas/elektrolyse/co2</code></td>
+            <td>ppm</td>
+            <td>CO2 Sensor im Elektrolyse-Raum</td>
+        </tr>
+        <tr>
+            <td><code>/gas/bhkw/methan</code></td>
+            <td>%</td>
+            <td>CH4 Sensor im BHKW-Raum</td>
+        </tr>
+        <tr>
+            <td><code>/gas/bhkw/wasserstoff</code></td>
+            <td>%</td>
+            <td>H2 Sensor im BHKW-Raum</td>
+        </tr>
+    </tbody>
+</table>
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div></div><div class="panel-grid-cell panel-grid-cell-empty" id="pgc-289-7-1" ></div></div></div><div class="panel-grid" id="pg-289-8" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-8-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-8-0-0" data-index="9">			<div class="textwidget"><h3>Photovoltaik</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Tech. Details</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Die Photovoltaik(PV)-Anlage auf dem Dach des Technologiezentrums erzeugt Strom aus Sonnenlicht, der im Gebäude genutzt wird bzw. bei Überschuss ins Stromnetz eingespeist wird.<br>
+</div>
+<div class="su-tabs-pane su-clearfix">
+Ertrag: ca. 8.000 kWh im Jahr<br>
+Leistung: ca. 10 kWp<br>
+Messtechnik: Einstrahlung, Temperatur, akt. Leistung u.v.m.<br>
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>wirkleistung</td>
+<td>W</td>
+<td>Wirkleistung</td>
+</tr>
+<tr>
+<td>umgebungstemperatur</td>
+<td>°C</td>
+<td>Umgebungstemperatur</td>
+</tr>
+<tr>
+<td>tagesertrag</td>
+<td>kWh</td>
+<td>Tagesertrag</td>
+</tr>
+<tr>
+<td>modultemperatur</td>
+<td>°C</td>
+<td>Modultemperatur</td>
+</tr>
+<tr>
+<td>gesamtertrag</td>
+<td>kWH</td>
+<td>Gesamtertrag</td>
+</tr>
+<tr>
+<td>gesamteinstrahlung</td>
+<td>W/m²</td>
+<td>Gesamteinstrahlung</td>
+</tr>
+<tr>
+<td>blindleistung</td>
+<td>W</td>
+<td>Blindleistung</td>
+</tr>
+<tr>
+<td>betriebszeit</td>
+<td>h</td>
+<td>Betriebszeit</td>
+</tr>
+<tr>
+<td>wechselrichter/b/strom</td>
+<td>mA</td>
+<td>Strom Wechselrichter B</td>
+</tr>
+<tr>
+<td>wechselrichter/a/strom</td>
+<td>mA</td>
+<td>Strom Wechselrichter A</td>
+</tr>
+<tr>
+<td>wechselrichter/b/spannung</td>
+<td>V</td>
+<td>Spannung am Wechselrichter B</td>
+</tr>
+<tr>
+<td>wechselrichter/a/spannung</td>
+<td>V</td>
+<td>Spannung am Wechselrichter A</td>
+</tr>
+<tr>
+<td>wechselrichter/b/leistung</td>
+<td>W</td>
+<td>Leistung Wechselrichter B</td>
+</tr>
+<tr>
+<td>wechselrichter/a/leistung</td>
+<td>W</td>
+<td>Leistung Wechselrichter A</td>
+</tr>
+</tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-8-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-8-1-0" data-index="10"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild4.png?fit=207%2C111" width="207" height="111" srcset="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild4.png?w=207 207w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild4.png?resize=100%2C54 100w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-9" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-9-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-9-0-0" data-index="11">			<div class="textwidget"><h3>Elektroauto</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Tech. Details</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Der BMW i3 ist ein vollelektrisch betriebenes Fahrzeug, ausgestattet mit einer aufladbaren Lithium-Ionen-Batterie. Bei Bremsvorgängen übernimmt der Elektromotor die Funktion eines Generators und wandelt die Bremsenergie wieder in Strom um. Ein hoher Anteil an eingesetzten Recycling-Materialien und energieeffizienten elektrischen Komponenten reduziert die Umweltauswirkungen dieses Fahrzeugs.
+</div>
+<div class="su-tabs-pane su-clearfix">
+BMW i3<br>
+Typ: vollelektrisch<br>
+el. Leistung: 125 kW<br>
+Batteriekapazität: 22 kWh<br>
+Wandladestation: wallb-e 22kW<br>
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<h5 id="toc_41">Lesen</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/ev-status</code></td>
+            <td></td>
+            <td>EV-Status <em>(A-F)</em></td>
+        </tr>
+        <tr>
+            <td><code>/ladestrom/proximity</code></td>
+            <td>A</td>
+            <td>Proximity Ladestrom</td>
+        </tr>
+        <tr>
+            <td><code>/ladestrom/vorgabe</code></td>
+            <td>A</td>
+            <td>Eingestellter Ladestrom <em>(6...80 Ampere)</em></td>
+        </tr>
+        <tr>
+            <td><code>/ladezeit</code></td>
+            <td>s</td>
+            <td>Ladezeit</td>
+        </tr>
+        <tr>
+            <td><code>/dip-schalter</code></td>
+            <td></td>
+            <td>DIP-Schalter Konfiguration <em>(Binär, DIP 1 = LSB)</em></td>
+        </tr>
+        <tr>
+            <td><code>/fw-version</code></td>
+            <td></td>
+            <td>Firmware Version <em>(z.B. 0.4.30 = 430)</em></td>
+        </tr>
+        <tr>
+            <td><code>/fehlercodes</code></td>
+            <td></td>
+            <td>Fehlercodes <em>(<br> 1. Kabelabweisung 13 A und 20 A<br> 2. Kabelabweisung 13 A <br> 3. Ungültiger PP-Wert <br> 4. Ungültiger CP-Wert <br> 5. Status F wegen fehlender Verfügbarkeit der Ladestation <br> 6. Verriegelung <br> 7. Entriegelung <br> 8. LD ist während Verriegelung weggefallen <br> 9. Überstromabschaltung <br> 10. Kommunikationsproblem Ladesteuerung - Messgerät bei aktivierter Überstromabschaltung <br> 11. Status D, Fahrzeug abgewiesen <br> 12. State A/B, Voltage Detection ausgelöst <br> 13. Fahrzeugseitig keine Diode im Control Pilot Kreis)</em></td>
+        </tr>
+        <tr>
+            <td><code>/di/enable</code></td>
+            <td></td>
+            <td>Digitaler Eingang EN (Enable)</td>
+        </tr>
+        <tr>
+            <td><code>/di/external-release</code></td>
+            <td></td>
+            <td>Digitaler Eingang XR (External Release)</td>
+        </tr>
+        <tr>
+            <td><code>/di/lock-detection</code></td>
+            <td></td>
+            <td>Digitaler Eingang LD (Lock Detection)</td>
+        </tr>
+        <tr>
+            <td><code>/di/manual-lock</code></td>
+            <td></td>
+            <td>Digitaler Eingang ML (Manual Lock)</td>
+        </tr>
+        <tr>
+            <td><code>/do/charger-ready</code></td>
+            <td></td>
+            <td>Digitaler Ausgang CR (Charger Ready)</td>
+        </tr>
+        <tr>
+            <td><code>/do/locking-request</code></td>
+            <td></td>
+            <td>Digitaler Ausgang LR (Locking Request)</td>
+        </tr>
+        <tr>
+            <td><code>/do/vehicle-ready</code></td>
+            <td></td>
+            <td>Digitaler Ausgang VR (Vehicle Ready)</td>
+        </tr>
+        <tr>
+            <td><code>/do/error</code></td>
+            <td></td>
+            <td>Digitaler Ausgang ER (Error)</td>
+        </tr>
+    </tbody>
+</table>
+
+<h5 id="toc_42">Schreiben</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+            <th>Beispiel</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/ladestrom/vorgabe/set</code></td>
+            <td>A</td>
+            <td>Ladestrom Einstellung <em>(6...80 Ampere)</em></td>
+            <td><code>{&quot;value&quot;: 30}</code></td>
+        </tr>
+    </tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-9-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-9-1-0" data-index="12"><div style="padding: 100px 10px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i1.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild3.png?fit=213%2C122" width="213" height="122" srcset="http://i1.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild3.png?w=213 213w, http://i1.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild3.png?resize=100%2C57 100w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-10" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-10-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-10-0-0" data-index="13">			<div class="textwidget"><h3>Elektrolyse</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Tech. Details</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Die Elektrolyse ist ein Verfahren zur Wasserstoff-Erzeugung. Dabei wird Wasser unter Einwirkung elektrischer Energie in einem chemischen Prozess in Wasserstoff und Sauerstoff aufgespalten. Der hier eingesetzte Elektrolyseur ist ein sogenannter PEM-Elektrolyseur (Proton-Exchange-Memrane). Der produzierte Wasserstoff kann als Brennstoff für das BHKW oder zur Methan-Erzeugung genutzt werden.
+</div>
+<div class="su-tabs-pane su-clearfix">
+Modell HPac<br>
+Typ PEM-Elektrolyse<br>
+el. Leistung 10kW<br>
+Wasserstoffproduktion 2,92 m3/h<br>
+Wasserstoffreinheit 99,99%<br>
+Druck 15 bar<br>
+Betriebsbereich 0-100%<br>
+Konnektivität ISO/on TCP/IP<br>
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<h5 id="toc_21">Lesen</h5>
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>alarm</td>
+<td></td>
+<td>Alarm <em>(1=aktiv)</em></td>
+</tr>
+<tr>
+<td>warning</td>
+<td></td>
+<td>Warnung <em>(1=aktiv)</em></td>
+</tr>
+<tr>
+<td>status</td>
+<td></td>
+<td>Anlagenstatus <em>(100-999)</em></td>
+</tr>
+<tr>
+<td>pressure</td>
+<td>bar</td>
+<td>Wasserstoff Druck</td>
+</tr>
+<tr>
+<td>moisture</td>
+<td></td>
+<td>Wasserstoff Feuchtigkeit</td>
+</tr>
+<tr>
+<td>psu/voltage</td>
+<td>V</td>
+<td>Polysulfon Ausgangsspannung</td>
+</tr>
+<tr>
+<td>psu/current</td>
+<td>A</td>
+<td>Polysulfon Ausgangsstrom</td>
+</tr>
+</tbody>
+</table>
+
+<h5 id="toc_22">Schreiben</h5>
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>operation/set</td>
+<td></td>
+<td>Start- und Stoppbefehl <em>(1=start, 0=stopp)</em></td>
+</tr>
+<tr>
+<td>operation/quickstart/set</td>
+<td></td>
+<td>Schnellstartmodus setzen <em>(1=aktiv, 0=inaktiv)</em></td>
+</tr>
+<tr>
+<td>stromaufnahme/set</td>
+<td>A</td>
+<td>Stellwert Stromaufnahme <em>(83-161A)</em></td>
+</tr>
+</tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-10-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-10-1-0" data-index="14"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i1.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild5.png?fit=149%2C165" width="149" height="165" srcset="http://i1.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild5.png?w=149 149w, http://i1.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild5.png?resize=100%2C111 100w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-11" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-11-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-11-0-0" data-index="15">			<div class="textwidget"><h3>Methanisierung</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Tech. Details</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Wie der Name vermuten lässt, handelt es sich bei der Methanisierung um ein Verfahren zur Erzeugung von Methan, dem Hauptbestandteil von Erdgas. Dabei werden Wasserstoff, welches zuvor in der Wasserelektrolyse erzeugt wurde, und Kohlenstoffdioxid (CO2) mithilfe von Bakterien zu Methan umgewandelt.
+</div>
+<div class="su-tabs-pane su-clearfix">
+Hersteller: MT BioMethan GmbH<br>
+Modell: Biologische Methanisierung - Prototyp<br>
+Typ: biologische Methanisierung<br>
+Methanproduktion: 0,2 m3/h<br>
+Methangehalt: mind. 80 Vol.-%<br>
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<h5 id="toc_24">Lesen</h5>
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>reaktor/druck</td>
+<td>mbar</td>
+<td>Reaktordruck</td>
+</tr>
+<tr>
+<td>reaktor/temperatur</td>
+<td>°C</td>
+<td>Reaktortemperatur</td>
+</tr>
+<tr>
+<td>reaktor/fuellstand</td>
+<td>%</td>
+<td>Füllstand der Flüssigkeit im Reaktor</td>
+</tr>
+<tr>
+<td>konzentration/sauerstoff</td>
+<td>%</td>
+<td>Sauerstoff-Konzentration</td>
+</tr>
+<tr>
+<td>konzentration/co2</td>
+<td>%</td>
+<td>Kohlenstoffdioxid-Konzentration</td>
+</tr>
+<tr>
+<td>konzentration/methan</td>
+<td>%</td>
+<td>Methangas-Konzentration</td>
+</tr>
+<tr>
+<td>durchfluss/wasserstoff</td>
+<td>l/h</td>
+<td>Wasserstoffdurchfluss</td>
+</tr>
+<tr>
+<td>durchfluss/co2</td>
+<td>l/h</td>
+<td>Kohlenstoffdioxid-Durchfluss</td>
+</tr>
+<tr>
+<td>differenzdruck</td>
+<td>mbar</td>
+<td>Differenzdruck zwischen den Verdichtern</td>
+</tr>
+<tr>
+<td>pt300</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>pt230</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>pt212</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+</tbody>
+</table>
+
+<h5 id="toc_25">Schreiben</h5>
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>vc410-stellwert/set</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>vc410-handbetrieb/set</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>vc410/set</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>v220-handbetrieb/set</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>v220/set</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>mv400-handbetrieb/set</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+<tr>
+<td>mv400/set</td>
+<td></td>
+<td>Bitte sprecht uns an</td>
+</tr>
+</tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-11-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-11-1-0" data-index="16"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild8.png?fit=189%2C176" width="189" height="176" srcset="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild8.png?w=189 189w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild8.png?resize=100%2C93 100w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-12" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-12-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-12-0-0" data-index="17">			<div class="textwidget"><h3>Speicher- & Heizstäbe</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Tech. Details</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+Das Blockheizkraftwerk und die Wärmepumpe versorgen den Energie Campus mit Wärme für Heizung und Warmwasserbereitung, sowie im Falle der Wärmepumpe mit Kälte zur Kühlung während der Sommermonate. Um diese Energie zwischenspeichern zu können, ist der Energie Campus mit mehreren Pufferspeichern ausgestattet. Diese Speicher können in beliebiger Weise miteinander verschaltet werden.
+</div>
+<div class="su-tabs-pane su-clearfix">
+<b>thermische Speicher Wasser</b><br>
+Hersteller: Flamco<br>
+Modell: PS 1000<br>
+Typ: 3x Warmwasserspeicher, 1 x Kaltwasserspeicher<br>
+Anzahl: 4<br>
+Volumen: 1.000 Liter<br>
+Besonderheit: Ausgestattet mit elektrischen Heizstäben (eigene Beschaffung)<br>
+<br>
+<b>Elektroheizstäbe</b><br>
+Hersteller: solar profi<br>
+Modell: EH 8000<br>
+Typ: Elektrowiderstand<br>
+Anschluss: G 1 1/2„<br>
+Länge: 710mm<br>
+Anzahl: 3<br>
+el. Leistung: 3x 8 kW<br>
+Schaltung über: 3x Siemens 3poliger Schütz (3RT2026-2AP00)<br>
+Spulenspannung: 240Vac<br>
+Leistung: 11 kW<br>
+Kontaktnennstrom: 25 A<br>
+Kontaktnennspannung: 400Vac<br>
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<h5 id="toc_20">Lesen</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/4/anforderung</code></td>
+            <td></td>
+            <td>SP04 Speicherladung angefordert</td>
+        </tr>
+        <tr>
+            <td><code>/4/bhkw/ausschaltpunkt</code></td>
+            <td>°C</td>
+            <td>SP04 Ausschaltpunkt des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/4/bhkw/einschaltpunkt</code></td>
+            <td>°C</td>
+            <td>SP04 Einschaltpunkt des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/4/heizpatrone/stufe/1</code></td>
+            <td></td>
+            <td>SP04 Heizpatrone Stufe 1</td>
+        </tr>
+        <tr>
+            <td><code>/4/heizpatrone/stufe/2</code></td>
+            <td></td>
+            <td>SP04 Heizpatrone Stufe 2</td>
+        </tr>
+        <tr>
+            <td><code>/4/heizpatrone/stufe/3</code></td>
+            <td></td>
+            <td>SP04 Heizpatrone Stufe 3</td>
+        </tr>
+        <tr>
+            <td><code>/4/mitte/temperatur</code></td>
+            <td>°C</td>
+            <td>SP04 Temperatur mitte</td>
+        </tr>
+        <tr>
+            <td><code>/4/oben/temperatur</code></td>
+            <td>°C</td>
+            <td>SP04 Temperatur oben</td>
+        </tr>
+        <tr>
+            <td><code>/4/unten/temperatur</code></td>
+            <td>°C</td>
+            <td>SP04 Temperatur unten</td>
+        </tr>
+        <tr>
+            <td>------------</td>
+            <td>---------</td>
+            <td>--------------</td>
+        </tr>
+        <tr>
+            <td><code>/5/anforderung</code></td>
+            <td></td>
+            <td>SP05 Speicherladung angefordert</td>
+        </tr>
+        <tr>
+            <td><code>/5/bhkw/ausschaltpunkt</code></td>
+            <td>°C</td>
+            <td>SP05 Ausschaltpunkt des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/5/bhkw/einschaltpunkt</code></td>
+            <td>°C</td>
+            <td>SP05 Einschaltpunkt des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/5/heizpatrone/stufe/1</code></td>
+            <td></td>
+            <td>SP05 Heizpatrone Stufe 1</td>
+        </tr>
+        <tr>
+            <td><code>/5/heizpatrone/stufe/2</code></td>
+            <td></td>
+            <td>SP05 Heizpatrone Stufe 2</td>
+        </tr>
+        <tr>
+            <td><code>/5/heizpatrone/stufe/3</code></td>
+            <td></td>
+            <td>SP05 Heizpatrone Stufe 3</td>
+        </tr>
+        <tr>
+            <td><code>/5/mitte/temperatur</code></td>
+            <td>°C</td>
+            <td>SP05 Temperatur mitte</td>
+        </tr>
+        <tr>
+            <td><code>/5/oben/temperatur</code></td>
+            <td>°C</td>
+            <td>SP05 Temperatur oben</td>
+        </tr>
+        <tr>
+            <td><code>/5/unten/temperatur</code></td>
+            <td>°C</td>
+            <td>SP05 Temperatur unten</td>
+        </tr>
+        <tr>
+            <td>------------</td>
+            <td>---------</td>
+            <td>--------------</td>
+        </tr>
+        <tr>
+            <td><code>/6/anforderung</code></td>
+            <td></td>
+            <td>SP06 Speicherladung angefordert</td>
+        </tr>
+        <tr>
+            <td><code>/6/bhkw/ausschaltpunkt</code></td>
+            <td>°C</td>
+            <td>SP06 Ausschaltpunkt des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/6/bhkw/einschaltpunkt</code></td>
+            <td>°C</td>
+            <td>SP06 Einschaltpunkt des BHKWs</td>
+        </tr>
+        <tr>
+            <td><code>/6/heizpatrone/stufe/1</code></td>
+            <td></td>
+            <td>SP06 Heizpatrone Stufe 1</td>
+        </tr>
+        <tr>
+            <td><code>/6/heizpatrone/stufe/2</code></td>
+            <td></td>
+            <td>SP06 Heizpatrone Stufe 2</td>
+        </tr>
+        <tr>
+            <td><code>/6/heizpatrone/stufe/3</code></td>
+            <td></td>
+            <td>SP06 Heizpatrone Stufe 3</td>
+        </tr>
+        <tr>
+            <td><code>/6/mitte/temperatur</code></td>
+            <td>°C</td>
+            <td>SP06 Temperatur mitte</td>
+        </tr>
+        <tr>
+            <td><code>/6/oben/temperatur</code></td>
+            <td>°C</td>
+            <td>SP06 Temperatur oben</td>
+        </tr>
+        <tr>
+            <td><code>/6/unten/temperatur</code></td>
+            <td>°C</td>
+            <td>SP06 Temperatur unten</td>
+        </tr>
+    </tbody>
+</table>
+
+<h5 id="toc_21">schreiben</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Einheit</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/4/beladeart/set</code></td>
+            <td></td>
+            <td>Beladeart SP04 <em>(1 Be-/Entladung, 3 Beladung BHKW, 5 Beladung E-Pat)</em></td>
+        </tr>
+        <tr>
+            <td><code>/5/beladeart/set</code></td>
+            <td></td>
+            <td>Beladeart SP05 <em>(1 Be-/Entladung, 3 Beladung BHKW, 5 Beladung E-Pat)</em></td>
+        </tr>
+        <tr>
+            <td><code>/6/beladeart/set</code></td>
+            <td></td>
+            <td>Beladeart SP06 <em>(1 Be-/Entladung, 3 Beladung BHKW, 5 Beladung E-Pat)</em></td>
+        </tr>
+    </tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-12-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-12-1-0" data-index="18"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild9.png?fit=151%2C228" width="151" height="228" srcset="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild9.png?w=151 151w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/Bild9.png?resize=100%2C151 100w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-13" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-13-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-13-0-0" data-index="19">			<div class="textwidget"><h3>RFID</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+
+<p>Der Energie-Campus wurde extra für den Hackathon mit 6 RFID-Readern des Typs <strong>RFU-620</strong> von unserem Industriepartner <strong>SICK</strong> ausgestattet. Die Reader wurden an verschiedenen Wegpunkten innerhalb des Gebäudes platziert und ermöglichen u.a. die Aufzeichnung von Bewegungsprofilen. </p>
+
+<p>Es stehen zahlreiche Transponder zur Verfügung, die auf Objekte (und Teilnehmer) aufgeklebt werden können. Über die verfügbaren Datenpunkte können die Transponder nicht nur örtlich <strong>zugeordnet</strong>, sondern auch mit Daten <strong>beschrieben</strong> (und <strong>ausgelesen</strong>) werden.</p>
+
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<h5 id="toc_32">Lesen</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Beschreibung</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/result/scan</code></td>
+            <td>Scanergebnis</td>
+        </tr>
+        <tr>
+            <td><code>/result/read</code></td>
+            <td>Leseergebnis</td>
+        </tr>
+        <tr>
+            <td><code>/result/write</code></td>
+            <td>Schreibergebnis</td>
+        </tr>
+        <tr>
+            <td><code>/result/di/1</code></td>
+            <td>Digitaler Eingang 1</td>
+        </tr>
+        <tr>
+            <td><code>/result/di/2</code></td>
+            <td>Digitaler Eingang 2</td>
+        </tr>
+    </tbody>
+</table>
+
+<h5 id="toc_33">Schreiben</h5>
+
+<table>
+    <thead>
+        <tr>
+            <th>Datenpunkt</th>
+            <th>Beschreibung</th>
+            <th>Beispiel</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td><code>/command/scan</code></td>
+            <td>Scan starten/beenden</td>
+            <td><code>1</code>,<code>0</code></td>
+        </tr>
+        <tr>
+            <td><code>/command/read</code></td>
+            <td>Lesebefehl, erwartet UII und Leselänge</td>
+            <td><code>{&quot;uii&quot;: &quot;3400E20020648118011820104189&quot;,&quot;read_length&quot;: &quot;16&quot;}</code></td>
+        </tr>
+        <tr>
+            <td><code>/command/write</code></td>
+            <td>Schreibbefehl, erwartet UII und Base64-codierte Daten</td>
+            <td><code>{&quot;uii&quot;: &quot;3400E2002064811801182030418B&quot;,&quot;data&quot;:&quot;MDEyMzQ1Njc4OUFCQ0RFRg==&quot;}</code></td>
+        </tr>
+        <tr>
+            <td><code>/command/color</code></td>
+            <td>LED Farbe</td>
+            <td><code>red</code>, <code>blue</code>, <code>white</code>, <code>yellow</code>, <code>green</code></td>
+        </tr>
+    </tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-13-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-13-1-0" data-index="20"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?fit=2308%2C2318" width="2308" height="2318" srcset="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?w=2308 2308w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?resize=150%2C150 150w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?resize=300%2C300 300w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?resize=768%2C771 768w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?resize=1020%2C1024 1020w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?resize=410%2C412 410w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?resize=100%2C100 100w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3019.jpg?resize=275%2C276 275w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-14" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-14-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-14-0-0" data-index="21">			<div class="textwidget"><h3>HMS IT/OT Gateway</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+
+<p>Das Anybus PROFINET/.Net-Gateway ermöglicht es, Fertigungsdaten eines PROFINET-Netzwerks an eine .Net-Applikation zu übergeben.</p>
+
+<p>Als .NET-Entwickler erhalten Sie Daten direkt aus dem SPS-System und können diese in Statistik-, Analyse- oder Instandhaltungsapplikationen benutzen.</p>
+
+<p>Es gibt vielfältige Einsatzmöglichkeiten für das Gateway: zum Beispiel Übertragung von Kennzahlen (KPIs), Übermittlung erweiterter Nachrichten mit strukturierten Datentypen oder schneller Transfer von E/A-Daten für &quot;Big Data&quot;.</p>
+
+<p>Beim Hackathon kommt das Gateway in einer exemplarischen Anwendung zum Einsatz, die als Anknüpfungspunkt für eigene Applikationen dienen kann. Es bildet die Brücke zwischen einer Siemens SPS und einem Windows-PC. Die Eingänge der SPS sind mit Kippschaltern versehen, die bei Betätigung eine Nachricht auf dem entsprechenden Datenpunkt auslösen. Einige SPS-Ausgänge können ebenfalls über Datenpunkte gesetzt werden.</p>
+
+<p><strong>Bei dieser Station steht der gesamte Aufbau zur Weiterentwicklung zur Verfügung. Ein Entwicklungsrechner mit TIA-Portal und Visual Studio steht dazu bereit.</strong> Technische Unterstützung beim Einsatz des IT/OT Gateways ist vorhanden, es werden jedoch Kenntnisse über SPS-Programmierung und .NET vorausgesetzt.</p>
+
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>sps/eingang/0</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/eingang/1</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/eingang/2</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/eingang/3</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/eingang/4</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/eingang/5</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/eingang/6</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/eingang/7</td>
+<td></td>
+<td>Zustand des Kippschalters (<em>true/false</em>)</td>
+</tr>
+<tr>
+<td>sps/ausgang/0/set</td>
+<td></td>
+<td>Erwartet ein <em>true</em> oder <em>false</em></td>
+</tr>
+<tr>
+<td>sps/ausgang/1/set</td>
+<td></td>
+<td>Erwartet ein <em>true</em> oder <em>false</em></td>
+</tr>
+<tr>
+<td>sps/ausgang/2/set</td>
+<td></td>
+<td>Erwartet ein <em>true</em> oder <em>false</em></td>
+</tr>
+<tr>
+<td>sps/ausgang/3/set</td>
+<td></td>
+<td>Erwartet ein <em>true</em> oder <em>false</em></td>
+</tr>
+<tr>
+<td>sps/ausgang/4/set</td>
+<td></td>
+<td>Erwartet ein <em>true</em> oder <em>false</em></td>
+</tr>
+</tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-14-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-14-1-0" data-index="22"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/560-Default-profinet-aspnet.png?fit=140%2C140" width="140" height="140" srcset="http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/560-Default-profinet-aspnet.png?w=140 140w, http://i0.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/560-Default-profinet-aspnet.png?resize=100%2C100 100w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-15" ><div class="no-col-padding panel-row-style" style="border-bottom: 1px solid #eaeaea;padding: 20px 0; " ><div class="panel-grid-cell" id="pgc-289-15-0" ><div class="so-panel widget widget_text panel-first-child panel-last-child" id="panel-289-15-0-0" data-index="23">			<div class="textwidget"><h3>Signallampe</h3>
+<br>
+<br>
+<div class="su-tabs su-tabs-style-default su-tabs-vertical my-custom-tabs" data-active="1"><div class="su-tabs-nav"><span class="" data-url="" data-target="blank">Beschreibung</span><span class="" data-url="" data-target="blank">Datenpunkte</span></div><div class="su-tabs-panes"><div class="su-tabs-pane su-clearfix">
+
+<p>Aus einer Produktionsumgebung nicht wegzudenken – beim Hackathon eine pfiffige Statusanzeige für ganz beliebige Events. Die Signallampe bietet einen einzigen Datenpunkt, über den das Licht ein- und ausgeschaltet werden kann.</p>
+
+</div>
+<div class="su-tabs-pane su-clearfix">
+
+<table>
+<thead>
+<tr>
+<th>Datenpunkt</th>
+<th>Einheit</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>signallampe/on/set</td>
+<td></td>
+<td>Erwartet ein <em>true</em> oder <em>false</em></td>
+</tr>
+</tbody>
+</table>
+
+</div></div></div>
+
+<!--
+  IMPORTANT
+  You need to add this CSS code to the custom CSS editor at plugin settings page
+-->
+<style>
+  .su-tabs.my-custom-tabs { background-color: #64B781 }
+  .su-tabs.my-custom-tabs .su-tabs-nav span { font-size: 0.9em }
+  .su-tabs.my-custom-tabs .su-tabs-nav span.su-tabs-current { background-color: #EDFAFF }
+  .su-tabs.my-custom-tabs .su-tabs-pane {
+    padding: 0.6em;
+    font-size: 0.9em;
+    background-color: #EDFAFF;
+  }
+</style></div>
+		</div></div><div class="panel-grid-cell" id="pgc-289-15-1" ><div class="so-panel widget widget_sow-image panel-first-child panel-last-child" id="panel-289-15-1-0" data-index="24"><div style="padding: 100px 0px 0px 0px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-default-b5a0057b6480">
+
+<div class="sow-image-container">
+	<img src="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?fit=2246%2C2149" width="2246" height="2149" srcset="http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?w=2246 2246w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?resize=300%2C287 300w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?resize=768%2C735 768w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?resize=1024%2C980 1024w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?resize=410%2C392 410w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?resize=100%2C96 100w, http://i2.wp.com/www.what-the-data.com/wp-content/uploads/2016/08/IMG_3020.jpg?resize=275%2C263 275w"  class="so-widget-image"/>
+</div>
+
+</div></div></div></div></div></div><div class="panel-grid" id="pg-289-16" ><div style="padding: 100px 0; " class="panel-row-style" ><div class="panel-grid-cell" id="pgc-289-16-0" ><div class="so-panel widget widget_sow-editor panel-first-child panel-last-child" id="panel-289-16-0-0" data-index="25"><div class="so-widget-sow-editor so-widget-sow-editor-base">
+<div class="siteorigin-widget-tinymce textwidget">
+	<p style="text-align: center;">Check back from time to time!</p>
+<h2 style="text-align: center;">MORE TO FOLLOW...</h2>
+</div>
+</div></div></div></div></div></div>			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+		</div>
+	</div><!-- #content -->
+
+    <a class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+	<footer id="colophon" class="site-footer clearfix" role="contentinfo">
+    
+			    <div class="footer-area">
+		    <div class="footer-branding">
+				<h1 class="site-title"><a href="http://www.what-the-data.com/" rel="home">What The Data!?</a></h1>
+			</div>
+			
+
+	
+	<div id="sidebar-footer" class="footer-widgets clearfix" role="complementary">
+					<div class="footer-column col-md-6 col-sm-6">
+				<aside id="text-4" class="widget widget_text"><h4 class="widget-title">Links</h4>			<div class="textwidget"><p><a href="/contact/">Kontakt</a><br />
+<a href="/press/">Presse</a><br />
+<a href="/impressum/">Impressum</a><br />
+<a href="/datenschutz/">Datenschutz</a><br />
+<b><a href="https://www.facebook.com/whatthedata/" target="_blank">Facebook</a></b></p>
+</div>
+		</aside>			</div>
+			
+					<div class="footer-column col-md-6 col-sm-6">
+				<aside id="perth_contact_info-2" class="widget perth_contact_info_widget"><h4 class="widget-title">Cybus GmbH</h4><div class="contact-address"><span><i class="fa fa-home"></i></span>Herlingsburg 16, 22529 Hamburg</div><div class="contact-phone"><span><i class="fa fa-phone"></i></span>(+49) - 40 -  523 891 01</div><div class="contact-email"><span><i class="fa fa-envelope"></i></span><a href="mailto:&#104;&#97;ck&#64;wha&#116;&#45;t&#104;e-&#100;at&#97;&#46;&#99;o&#109;">&#104;&#97;ck&#64;wha&#116;&#45;t&#104;e-&#100;at&#97;&#46;&#99;o&#109;</a></div></aside>			</div>
+			
+	</div>		</div>
+		
+		<div class="site-info container">
+<!--
+			<a href="http://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: <a href="http://athemes.com/theme/perth" rel="designer">Perth</a> by aThemes.-->
+		</div><!-- .site-info -->
+	</footer>
+
+
+</div><!-- #page -->
+
+	<div style="display:none">
+	</div>
+<div id="su-footer-links" style="text-align: center;"></div><link rel='stylesheet' id='su-box-shortcodes-css'  href='http://www.what-the-data.com/wp-content/plugins/shortcodes-ultimate/assets/css/box-shortcodes.css?ver=4.9.9' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/www.what-the-data.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"sending":"Sending ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.5'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201638'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/themes/perth/js/scripts.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/themes/perth/js/main.min.js?ver=4.6.1'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/themes/perth/js/skip-link-focus-fix.js?ver=20130115'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/plugins/jetpack/_inc/twitter-timeline.js?ver=4.0.0'></script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-includes/js/wp-embed.min.js?ver=4.6.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var su_other_shortcodes = {"no_preview":"This shortcode doesn't work in live preview. Please insert it into editor and preview on the site."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.what-the-data.com/wp-content/plugins/shortcodes-ultimate/assets/js/other-shortcodes.js?ver=4.9.9'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201638.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.3.1',blog:'114256321',post:'289',tz:'0',srv:'www.what-the-data.com'} ]);
+	_stq.push([ 'clickTrackerInit', '114256321', '289' ]);
+</script>
+
+</body>
+</html>

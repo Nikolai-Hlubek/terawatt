@@ -81,7 +81,9 @@ Vagrant.configure("2") do |config|
 	pip3 install iplantuml
 	pip3 install numpy
     pip3 install paho-mqtt
-    pip install csvkit
+    pip3 install csvkit
+    pip3 install beautifulsoup4
+    pip3 install python-slugify
 	apt-get install -y plantuml
 	cp /usr/share/plantuml/plantuml.jar /usr/local/
 
