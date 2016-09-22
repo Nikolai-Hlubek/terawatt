@@ -277,6 +277,10 @@ class Electrolysis(Device):
         super().__init__()  # parent init
         self.energy_now.electrical = 0
 
+        self.decompositional_voltage = 1.229
+        self.efficiency = 0.7  # Assume 70% efficiency
+        self.power_in_max.electrical = 10000
+        
         self.state.provide = True
         self.state.consume = False
         
@@ -291,7 +295,7 @@ class Electrolysis(Device):
           p1/p2 = V2/V1
           => V_atmo = p_prod / p_atmo * V_prod
           
-        hydrogen (atmospheric pressure): 0.003 kWh/l
+        hydrogen (atmospheric pressure): 3 Wh/l
         """
         production_minute = 40  # liter
         production_timestep = production_minute / 60 * timestep  # liter
@@ -312,12 +316,20 @@ class Electrolysis(Device):
         return power
 
     def _do_consume(self, power):
-        if power.electrical >= 12000:
-            additional_energy = self.energy_production
-            power.electrical -= 12000
+        current_electrical = power.electrical / self.decompositional_voltage
+
+        # According to Farady the weight of the electrolytical created substance
+        # is proportional to the charge that flows
+        # I could not find a minimum working power except the required decompositional voltage.
+        # So I assume that 1A should be enough to run the electrolysis.
+        
+        if current_electrical >= 1:
+            useable_power = min(self.power_in_max.electrical, power.electrical)
+            additional_energy = self._to_energy(useable_power) * self.efficiency
+            power.electrical -= useable_power
             self.energy_now.chemical += additional_energy
-            self.energy_produced.chemical += additional_energy
-            self.energy_consumed.electrical += self._to_energy(12000)  # Required 12000 Watt
+            self.energy_provided.chemical += additional_energy
+            self.energy_consumed.electrical += self._to_energy(useable_power)
         return power
 
     def _do_provide(self, power, power_requested=None):
