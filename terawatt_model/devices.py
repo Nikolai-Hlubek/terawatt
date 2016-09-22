@@ -6,8 +6,10 @@ from .basics import *
 # battery.py
 class Battery(Device):
     """
-    Charge time for accumulator = (capacity of accumulator in mAh) / (charging current in mA) * 1.3
+    Charge time for accumulator = (capacity of accumulator in mAh) / (charging current in mA) * 1.35
     We can use the power directly since the voltage cancels out.
+    
+    Charging current estimate: Max current ~ Max energy * 0.4
     """
     def __init__(self):
         super().__init__()  # parent init
@@ -19,10 +21,11 @@ class Battery(Device):
         self.super_cap_max_energy = 300
         self.battery_current_energy = 0
         self.battery_max_energy = 30000
-        self.max_power = 50000
+        self.power_in_max.electrical = self.battery_max_energy * 0.4
+        self.power_out_max.electrical = 50000
 
         self.energy_now.electrical = 0
-        self.energy_max.electrical = 30300
+        self.energy_max.electrical = self.battery_max_energy + self.super_cap_max_energy
     
     def update(self, power, state=None, power_requested=None):
         super().update(power, state)
@@ -37,14 +40,17 @@ class Battery(Device):
         return power
 
     def _do_consume(self, power):
-        additional_energy = self._to_energy(power.electrical) / 1.3
+        power_in_max = self.get_power_in_max()
+        useable_power = min(power_in_max.electrical, power.electrical)
+        additional_energy = self._to_energy(useable_power) / 1.35
+
         if self.super_cap_current_energy + additional_energy < self.super_cap_max_energy:
             self.super_cap_current_energy += additional_energy
-            power.electrical = 0
+            power.electrical -= useable_power
             self.energy_consumed.electrical += additional_energy
         elif self.battery_current_energy + additional_energy < self.battery_max_energy:
             self.battery_current_energy += additional_energy
-            power.electrical = 0
+            power.electrical -= useable_power
             self.energy_consumed.electrical += additional_energy
         
         self.energy_now.electrical = self.super_cap_current_energy + self.battery_current_energy
@@ -67,6 +73,20 @@ class Battery(Device):
         self.energy_now.electrical = self.super_cap_current_energy + self.battery_current_energy
         return power
 
+    def get_power_in_max(self):
+        """
+        The charging is usually reduced above 80% to enhance the livespan of the battery.
+        """
+        power_max = Power()
+        if self.energy_now.electrical < 0.8*self.energy_max.electrical:
+            power_max.electrical = self.power_in_max.electrical
+            return power_max
+        elif 0.8*self.energy_max.electrical <= self.energy_now.electrical <= 1.0*self.energy_max.electrical:
+            power_max.electrical = self.power_in_max.electrical * 0.5
+            return power_max
+        else:
+            return power_max
+    
 
 # photovoltaic.py
 class Photovoltaic(Device):
@@ -204,11 +224,11 @@ class Car(Device):
     An electric car as consumer for the power produced.
     """
 
-    def __init__(self):
+    def __init__(self, power_in_max_electrical=7400, energy_max_electrical=22000):
         super().__init__()  # parent init
         self.energy_now.electrical = 0
-        self.energy_max.electrical = 22000
-        self.charging_power_max = 7400
+        self.energy_max.electrical = energy_max_electrical
+        self.power_in_max.electrical = power_in_max_electrical
 
         self.state.provide = False
         self.state.consume = True
@@ -222,15 +242,30 @@ class Car(Device):
         return power
     
     def _do_consume(self, power):
-        useable_power=min(self.charging_power_max, power.electrical)
-        additional_energy = self._to_energy(useable_power) / 1.3
+        power_in_max = self.get_power_in_max()
+        useable_power = min(power_in_max.electrical, power.electrical)
+        additional_energy = self._to_energy(useable_power) / 1.35
         if self.energy_now.electrical + additional_energy < self.energy_max.electrical:
             self.energy_now.electrical += additional_energy
-            power.electrical = power.electrical-useable_power
+            power.electrical -= useable_power
         
         return power
-        
 
+    def get_power_in_max(self):
+        """
+        The charging is usually reduced above 80% to enhance the livespan of the battery.
+        """
+        power_max = Power()
+        if self.energy_now.electrical < 0.8*self.energy_max.electrical:
+            power_max.electrical = self.power_in_max.electrical
+            return power_max
+        elif 0.8*self.energy_max.electrical <= self.energy_now.electrical <= 1.0*self.energy_max.electrical:
+            power_max.electrical = self.power_in_max.electrical * 0.5
+            return power_max
+        else:
+            return power_max
+
+        
 # electrolysis.py
 class Electrolysis(Device):
     """
