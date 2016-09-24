@@ -16,9 +16,9 @@ def send_morse_code():
 
     client.loop_start()
 
-    l = 1
-    s = 0.5
-    end = 1.5
+    l = 2
+    s = 1
+    end = 3
     morse = [
         l, s, l, s, end,  # c
         l, l, l, end,     # o

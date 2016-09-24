@@ -33,3 +33,5 @@ analysed<-merged[,list(
 png("pv_wirk_analysed.png")
 qplot(analysed$timestamp, analysed$value)
 dev.off()
+
+write.csv(analysed, "pv_wirk_analysed.csv")
