@@ -9,7 +9,7 @@ if(length(args)==0){
 filename=args[1]
 
 factor<-1
-if(length(args)>=1 && args[2]=="invert"){
+if(length(args)>1 & args[2]=="invert"){
     factor=-1
 }
 
