@@ -5,3 +5,5 @@ __pycache__/
 *.svg
 data/
 websiteanalysis/staubsauger_config.txt
+analysis/*.csv
+analysis/*.png
