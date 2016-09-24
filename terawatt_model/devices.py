@@ -102,7 +102,7 @@ class Photovoltaic(Device):
         self.state.provide = True
         self.state.consume = False
 
-        self._real_data={}
+        self._real_data = {}
         self._load_real_data()
 
     def _load_real_data(self):
@@ -112,13 +112,13 @@ class Photovoltaic(Device):
             reader = csv.reader(csvfile, dialect)
             next(reader, None)
             for row in reader:
-                self._real_data[datetime.datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S")]=float(row[2])
+                self._real_data[datetime.datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S")] = float(row[2])
 
     def update(self, power, time=None, state=None):
         super().update(power, state)
 
         if self.state.provide:
-            if time!=None and time in self._real_data and self._real_data[time]!=None:
+            if time != None and time in self._real_data and self._real_data[time] != None:
                 power = self._do_provide_timed(power, time)
             else:
                 power = self._do_provide(power)
