@@ -293,7 +293,7 @@ class Electrolysis(Device):
         self.energy_now.electrical = 0
 
         self.decompositional_voltage = 1.229
-        self.efficiency = 0.7  # Assume 70% efficiency
+        self.efficiency = 0.9  # 90% efficiency, as told by "energy campus team"
         self.power_in_max.electrical = 10000
         
         self.state.provide = True
