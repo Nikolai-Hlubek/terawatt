@@ -46,4 +46,4 @@ png(paste(filename, "_analysed.png", sep=""))
 qplot(analysed$timestamp, analysed$value)
 dev.off()
 
-write.csv(analysed, paste(filename, "_analysed.csv", sep="")
+write.csv(analysed, paste(filename, "_analysed.csv", sep=""))
