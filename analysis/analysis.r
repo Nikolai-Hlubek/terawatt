@@ -12,6 +12,7 @@ factor<-1
 if(length(args)>1 & args[2]=="invert"){
     factor=-1
 }
+print(factor)
 
 data <- read.csv(paste(filename,".csv", sep=""))
 data$timestamp=round(data$timestamp/1000)
