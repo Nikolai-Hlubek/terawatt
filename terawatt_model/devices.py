@@ -120,7 +120,8 @@ class Photovoltaic(Device):
 
 
 # sun.py
-import numpy as np
+
+#import numpy as np  # Don't use since we want to use pypy
 import pysolar
 import datetime
 
@@ -138,8 +139,8 @@ class Sun(Device):
         self.latitude_deg = latitude_deg  # positive in the northern hemisphere
         self.longitude_deg = longitude_deg  # negative reckoning west from prime meridian in Greenwich, England
 
-    def gaussian(self, x, mu, sig):
-        return np.exp(-np.power(x - mu, 2.) / (2 * np.power(sig, 2.)))
+#    def gaussian(self, x, mu, sig):
+#        return np.exp(-np.power(x - mu, 2.) / (2 * np.power(sig, 2.)))
 
     def sun_model(self, d=datetime.datetime.now()):
         altitude_deg = pysolar.solar.get_altitude(self.latitude_deg, self.longitude_deg, d)
@@ -224,11 +225,12 @@ class Car(Device):
     An electric car as consumer for the power produced.
     """
 
-    def __init__(self, power_in_max_electrical=7400, energy_max_electrical=22000):
+    def __init__(self, power_in_max_electrical=7400, energy_max_electrical=22000, fuel_usage_100_km=17000):
         super().__init__()  # parent init
         self.energy_now.electrical = 0
         self.energy_max.electrical = energy_max_electrical
         self.power_in_max.electrical = power_in_max_electrical
+        self.fuel_usage_100_km = fuel_usage_100_km
 
         self.state.provide = False
         self.state.consume = True
@@ -265,7 +267,20 @@ class Car(Device):
         else:
             return power_max
 
-        
+    def drive(self, distance):
+        """
+        Drive the specified amount of kilometers and discharge the battery accordingly 
+        return True if possible
+        otherwise leave battery uncharged and return False.
+        """
+        energy_required_electrical = self.fuel_usage_100_km / 100 * distance
+        if self.energy_now.electrical >= energy_required_electrical:
+            self.energy_now.electrical -= energy_required_electrical
+            return True
+        else:
+            return False
+
+
 # electrolysis.py
 class Electrolysis(Device):
     """
