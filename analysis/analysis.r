@@ -2,9 +2,20 @@
 library(data.table)
 library(ggplot2)
 
-data <- read.csv('pv_wirk.csv')
-data$value <- -1*data$value
+args = commandArgs(trailingOnly=TRUE)
+if(length(args)==0){
+    stop("You have to provide a file name.")
+}
+filename=args[1]
+
+factor<-1
+if(length(args)>=1 && args[2]=="invert"){
+    factor=-1
+}
+
+data <- read.csv(paste(filename,".csv", sep=""))
 data$timestamp=round(data$timestamp/1000)
+data$value=factor*data$value
 
 lo <- loess(data$value~data$timestamp)
 minTime=min(data$timestamp)
@@ -15,7 +26,7 @@ smoothedValues=predict(lo, smoothedTime)
 data$timestamp <- as.POSIXct(data$timestamp, origin="1970-01-01")
 smoothedTimestamp=as.POSIXct(smoothedTime, origin="1970-01-01")
 
-png("pv_wirk.png")
+png(paste(filename, ".png", sep=""))
 qplot(data$timestamp, data$value)+geom_point(aes(x=smoothedTimestamp, y=smoothedValues))
 dev.off()
 
@@ -30,8 +41,8 @@ analysed<-merged[,list(
     value=ifelse(is.na(value), valueSmoothed, value)
 )]
 
-png("pv_wirk_analysed.png")
+png(paste(filename, "_analysed.png", sep=""))
 qplot(analysed$timestamp, analysed$value)
 dev.off()
 
-write.csv(analysed, "pv_wirk_analysed.csv")
+write.csv(analysed, paste(filename, "_analysed.csv", sep="")
