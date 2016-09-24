@@ -118,7 +118,7 @@ with open('agents_undisciplined.dat') as json_data:
     data_agent_undisciplined = json.load(json_data)
 
 data = []
-for agent in range(2):
+for agent in range(5):
     
     print('Number of agents simulated', agent)
     data_agent = []
@@ -127,12 +127,16 @@ for agent in range(2):
     data_agent.append(copy.deepcopy(agent_n))
     agent_n['max_energy_timestamp'] = 0
 
-    for day in range(5):
+    for day in range(25):
         agent_n = run_agent_n_day_n(agent_n)
         print(agent_n)
         data_agent.append(copy.deepcopy(agent_n))
     
     data.append(data_agent)
+
+
+    with open('agents_cooperation.dat', 'w') as outfile:
+        json.dump(data, outfile)
 
 
 with open('agents_cooperation.dat', 'w') as outfile:
