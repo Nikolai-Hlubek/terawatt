@@ -106,7 +106,7 @@ class Photovoltaic(Device):
         self._load_real_data()
 
     def _load_real_data(self):
-        with open('analysis/pv_wirk_analysed.csv') as csvfile:
+        with open('../analysis/pv_wirk_analysed.csv') as csvfile:
             dialect = csv.Sniffer().sniff(csvfile.read(1024))
             csvfile.seek(0)
             reader = csv.reader(csvfile, dialect)
