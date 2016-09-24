@@ -8,36 +8,14 @@ import copy
 sys.path.insert(0, os.path.join('..'))
 import terawatt_model
 
-
-def create_agent_n():
-    agent_n = dict(
-        #car1_energy = random.randint(0, terawatt_model.Car.energy_max.electrical),
-        car1_energy = 0,
-        charge_car1_start = random.randint(0, 19),
-        charge_car1_time = random.randint(0, 5),
-        car1_distance_work = random.randint(40, 80),
-        car1_distance_additional = 0,
-        car1_drive_success = False,
-        #car2_energy = random.randint(0, terawatt_model.Car.energy_max.electrical),
-        car2_energy = 0,
-        charge_car2_start = random.randint(0, 19),
-        charge_car2_time = random.randint(0, 5),
-        car2_distance_work = random.randint(40, 80),
-        car2_distance_additional = 0,
-        car2_drive_success = False,
-        #battery_energy = random.randint(0, terawatt_model.Battery.energy_max.electrical),
-        battery_energy = 0,
-        #cogeneration_energy = random.randint(0, 1000),
-        cogeneration_energy = 0,
-    )
-    return agent_n
+from focus_groups import create_agent_n
 
 
 def run_agent_n_day_n(agent_n):
     sun = terawatt_model.Sun()
     photovoltaic = terawatt_model.Photovoltaic()
-    car1 = terawatt_model.Car()
-    car2 = terawatt_model.Car()
+    car1 = terawatt_model.Car(agent_n['car1_max_energy'])
+    car2 = terawatt_model.Car(agent_n['car2_max_energy'])
     provider = terawatt_model.Provider()
     battery = terawatt_model.Battery()
     electrolysis = terawatt_model.Electrolysis()
@@ -88,8 +66,8 @@ def run_agent_n_day_n(agent_n):
         
         
     # Subtract power required for drive of day
-    agent_n['car1_distance_additional'] = random.randint(0, 10)
-    agent_n['car2_distance_additional'] = random.randint(0, 10)
+    agent_n['car1_distance_additional'] = random.randint(0, 30)
+    agent_n['car2_distance_additional'] = random.randint(0, 30)
     agent_n['car1_drive_success'] = car1.drive(agent_n['car1_distance_work']+agent_n['car1_distance_additional'])
     agent_n['car2_drive_success'] = car2.drive(agent_n['car2_distance_work']+agent_n['car2_distance_additional'])
     agent_n['car1_energy'] = car1.energy_now.electrical
@@ -100,10 +78,11 @@ def run_agent_n_day_n(agent_n):
     return agent_n
 
 data = []
-for agent in range(25):
-    
+for n in range(5):
+   
+    print('Number of agents processed', n) 
     data_agent = []
-    agent_n = create_agent_n()
+    agent_n = create_agent_n(n)
     print(agent_n)
     data_agent.append(copy.deepcopy(agent_n))
 
@@ -113,6 +92,10 @@ for agent in range(25):
         data_agent.append(copy.deepcopy(agent_n))
     
     data.append(data_agent)
+    
+    # write intermediary results 
+    with open('agents_undisciplined.dat', 'w') as outfile:
+        json.dump(data, outfile)
 
 
 with open('agents_undisciplined.dat', 'w') as outfile:
