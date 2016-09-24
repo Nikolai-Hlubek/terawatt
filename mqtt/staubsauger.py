@@ -9,7 +9,7 @@ class KleinerStaubsauger:
         self._topic=topic
 
         self._client = mqtt.Client()
-        # self._client.username_pw_set(username, password=None)
+        self._client.username_pw_set('codingagents', password='C4fEGso7TD')
         self._client.on_message = self._on_message
         self._client.on_connect = self._on_connect
         self._client.connect(host, port, 60)

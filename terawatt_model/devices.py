@@ -2,6 +2,7 @@
 
 from .globals import *
 from .basics import *
+import csv
 
 # battery.py
 class Battery(Device):
@@ -95,21 +96,44 @@ class Photovoltaic(Device):
     """
     def __init__(self):
         super().__init__()  # parent init
-        self.panel_size = 50  # square meters
+        self.panel_size = 40  # square meters
         self.efficiency = 0.2  # efficiency of solar power to electrical power conversion
 
         self.state.provide = True
         self.state.consume = False
 
-    def update(self, power, state=None):
+        self._real_data={}
+        self._load_real_data()
+
+    def _load_real_data(self):
+        with open('analysis/pv_wirk_analysed.csv') as csvfile:
+            dialect = csv.Sniffer().sniff(csvfile.read(1024))
+            csvfile.seek(0)
+            reader = csv.reader(csvfile, dialect)
+            next(reader, None)
+            for row in reader:
+                self._real_data[datetime.datetime.strptime(row[1], "%Y-%m-%d %H:%M:%S")]=float(row[2])
+
+    def update(self, power, time=None, state=None):
         super().update(power, state)
 
         if self.state.provide:
-            power = self._do_provide(power)
+            if time!=None and time in self._real_data and self._real_data[time]!=None:
+                power = self._do_provide_timed(power, time)
+            else:
+                power = self._do_provide(power)
         
         self._log_current_power(power)
         return power
-    
+
+    def _do_provide_timed(self, power, time):
+        power.electrical = self._real_data[time]
+
+        energy = self._to_energy(power.electrical)
+        self.energy_now.electrical = energy
+        self.energy_provided.electrical += energy
+        return power
+
     def _do_provide(self, power):
         power.electrical = self.efficiency * self.panel_size * power.solar
 

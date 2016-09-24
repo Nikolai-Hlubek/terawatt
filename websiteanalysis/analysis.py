@@ -17,11 +17,18 @@ for w in all_widgets:
     if h3!=None:
         name=slugify(w.find('h3').string)
 
+        base=''
+        p=w.find('p')
+        if p!=None:
+            s=p.find('strong')
+            if s!=None:
+                base=s.string+'/'
         for tr in w.find_all('tr'):
             first_td=tr.find('td')
             if first_td!=None:
                 content=first_td.string
                 if content.find('-')!=0 and not content.endswith('/set'):
-                    f.write(name+' '+first_td.string+' '+host+' '+port+'\n')
+                    content=(base+content).replace('//', '/')
+                    f.write(name+' '+content+' '+host+' '+port+'\n')
 
 f.close()

@@ -149,3 +149,15 @@ The staubsauger config can be automatically derived from the website. There is a
   python3 analysis.py
 
 It creates the file staubsauger_config.txt, which can be used to start the staubsauger process for getting the data.
+
+## Data analysis
+
+The data is fetched as is and written to /vagrant/data.
+
+Example:
+
+  b'{"value":-7121.083,"timestamp":1474716382489}'
+  b'{"value":-7126.776,"timestamp":1474716383459}'
+  b'{"value":-7127.814,"timestamp":1474716384479}'
+
+Data for photovoltaic is mainly unavailable due to hardware failure. The available data is coming from the network interface of the pv.
