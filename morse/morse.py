@@ -7,10 +7,10 @@ def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
 
 client = mqtt.Client()
+client.username_pw_set('codingagents', password='C4fEGso7TD')
 client.on_connect = on_connect
 
-#client.connect('energie-campus.cybus.io', 1883, 60)
-client.connect('localhost', 1883, 60)
+client.connect('energie-campus.cybus.io', 1883, 60)
 
 client.loop_start()
 
@@ -37,8 +37,8 @@ counter=0
 while counter<50:
     counter=counter+1
     for m in morse:
-        client.publish('signallampe/on/set', 'true')
+        client.publish('io/cybus/energie-campus/signallampe/signallampe/on/set', 'true')
         time.sleep(m)
-        client.publish('signallampe/on/set', 'false')
+        client.publish('io/cybus/energie-campus/signallampe/signallampe/on/set', 'false')
 
 client.loop_stop()
