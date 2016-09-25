@@ -13,7 +13,11 @@ state SoftwareInfrastructure {
     jupyter : documentation
     jupyter : presentation
     vagrant --> python
-    python : programming language
+    python : backend
+    vagrant --> R
+    R : data analysis
+    vagrant --> plotly
+    plotly : dynamic data visualization
     
 }
 @enduml
