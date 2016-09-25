@@ -2,7 +2,6 @@
 .ipynb_checkpoints/
 *.swp
 __pycache__/
-*.svg
 websiteanalysis/staubsauger_config.txt
 analysis/*.csv
 analysis/*.png
