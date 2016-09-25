@@ -1,7 +1,11 @@
 import time
 import random
+import logging
 
 import paho.mqtt.client as mqtt
+
+logging.basicConfig(format='%(asctime)s %(message)s', filename='morse.log', level=logging.DEBUG)
+logger = logging.getLogger('morse')
 
 placeholder='##id##'
 url='io/cybus/energie-campus/rfid/'+placeholder+'/command/color'
@@ -11,7 +15,7 @@ def replace_url(id):
     return url.replace(placeholder, str(id))
 
 def on_connect(client, userdata, flags, rc):
-    print("Connected with result code " + str(rc))
+    logger.info("Connected with result code " + str(rc))
     #client.subscribe('io/cybus/energie-campus/signallampe/on/set')
     for i in ids:
         client.subscribe(replace_url(i))
@@ -51,14 +55,14 @@ def send_morse_code():
     time.sleep(2)
     counter=0
     while counter<3:
-        print('Start')
+        logger.info('Start')
         counter=counter+1
         for m in morse:
-            print('Start publishing')
+            logger.info('Start publishing')
             #client.publish('io/cybus/energie-campus/signallampe/on/set', '1')
             for i in ids:
                 client.publish(replace_url(i), 'red')
-            print('End publishing')
+            logger.info('End publishing')
             time.sleep(m)
             #client.publish('io/cybus/energie-campus/signallampe/on/set', False)
             for i in ids:
