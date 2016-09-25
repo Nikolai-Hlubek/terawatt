@@ -3,12 +3,18 @@ import random
 
 import paho.mqtt.client as mqtt
 
-url='io/cybus/energie-campus/rfid/14470220/command/color'
+placeholder='##id##'
+url='io/cybus/energie-campus/rfid/'+placeholder+'/command/color'
+ids=[14470220, 16290112, 12350008, 15400140]
+
+def replace_url(id):
+    return url.replace(placeholder, str(id))
 
 def on_connect(client, userdata, flags, rc):
     print("Connected with result code " + str(rc))
     #client.subscribe('io/cybus/energie-campus/signallampe/on/set')
-    client.subscribe(url)
+    for i in ids:
+        client.subscribe(replace_url(i))
 
 def send_morse_code():
     client = mqtt.Client()
@@ -39,7 +45,8 @@ def send_morse_code():
     ]
 
     #client.publish('io/cybus/energie-campus/signallampe/on/set', False)
-    client.publish(url, 'blue')
+    for i in ids:
+        client.publish(replace_url(i), 'blue')
 
     time.sleep(2)
     counter=0
@@ -49,11 +56,13 @@ def send_morse_code():
         for m in morse:
             print('Start publishing')
             #client.publish('io/cybus/energie-campus/signallampe/on/set', '1')
-            client.publish(url, 'red')
+            for i in ids:
+                client.publish(replace_url(i), 'red')
             print('End publishing')
             time.sleep(m)
             #client.publish('io/cybus/energie-campus/signallampe/on/set', False)
-            client.publish(url, 'blue')
+            for i in ids:
+                client.publish(replace_url(i), 'blue')
             time.sleep(s)
         print(counter)
 
